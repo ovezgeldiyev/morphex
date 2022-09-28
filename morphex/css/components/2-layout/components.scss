@@ -134,22 +134,26 @@ p {
     margin-right: 15px;
     width: 39px;
     height: 18px;
-    background-color: #D9D9D9;
-    border-radius: 16px;
     position: relative;
     cursor: pointer;
     &__box {
         position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #D9D9D9;
+        border-radius: 16px;
+        transition: .3s ease;
         &::before {
             content: "";
             position: absolute;
-            top: 2px;
-            left: 2px;
+            top: 50%;
+            left: 3px;
             width: 14px;
             height: 14px;
             background-color: $white;
             border-radius: 50%;
             transition: .2s ease;
+            transform: translateY(-50%);
         }
     }
     input {
@@ -163,9 +167,9 @@ p {
         cursor: pointer;
         &:checked {
             & ~ .check__box {
+                background-color: $main;
                 &::before {
-                    left: unset;
-                    right: 2px;
+                    transform: translate(20px, -50%);
                 }
             }
       
