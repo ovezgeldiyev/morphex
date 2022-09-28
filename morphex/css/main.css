@@ -399,11 +399,15 @@ table.big thead:first-child th {
   color: #787878;
   padding: 24px 49px 34px;
 }
-table.big thead:first-child th span {
+table.big thead:first-child th h6 p {
+  display: inline-block;
+  text-align: center;
+}
+table.big thead:first-child th h6 p span {
   display: block;
-  color: #2D2D2D;
   margin-top: 15px;
   font-size: 13px;
+  color: #2D2D2D;
 }
 table.big thead:first-child th:first-child {
   padding-left: 99px;
@@ -472,6 +476,11 @@ table.extra td h4 small {
   font-size: 13px;
   color: #787878;
   margin-left: 11px;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .header {
@@ -756,6 +765,9 @@ table.extra td h4 small {
   font-family: "Inter", sans-serif;
 }
 
+.list__inner {
+  padding: 120px 0 0 0;
+}
 .list__inner-buttons {
   display: -webkit-box;
   display: -ms-flexbox;

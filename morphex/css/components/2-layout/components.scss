@@ -278,11 +278,18 @@ table {
           th {
             color: $gray-2;
             padding: 24px 49px 34px;
-            span {
-              display: block;
-              color: $black-2;
-              margin-top: 15px;
-              font-size: 13px;
+            h6{
+              p{
+                display: inline-block;
+                text-align: center;
+                span{
+                  display: block;
+                  margin-top:15px ;
+                  font-size: 13px;
+                  color: $black-2;
+                }
+              }
+
             }
             &:first-child {
               padding-left: 99px;
@@ -365,4 +372,10 @@ table {
         }
       }
     }
+  }
+
+
+  h6{
+    font-size: 14px;
+    line-height: 16px;
   }
