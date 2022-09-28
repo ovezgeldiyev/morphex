@@ -756,9 +756,6 @@ table.extra td h4 small {
   font-family: "Inter", sans-serif;
 }
 
-.list__inner {
-  padding: 120px 0 0 0;
-}
 .list__inner-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
