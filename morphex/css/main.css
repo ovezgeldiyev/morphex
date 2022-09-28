@@ -96,15 +96,6 @@ h3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-}
-
-h4 {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,7 +103,7 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
 }
-h4 span {
+h3 span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,7 +117,7 @@ h4 span {
   height: 23px;
   margin-right: 13px;
 }
-h4 span img {
+h3 span img {
   width: 100%;
 }
 
@@ -159,6 +150,35 @@ h4 span img {
   width: 100%;
 }
 
+h5 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+h5 span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 23px;
+  height: 23px;
+  margin-right: 12px;
+}
+h5 span img {
+  width: 100%;
+}
+
 p.sm {
   font-size: 10px;
   line-height: 12px;
@@ -172,24 +192,19 @@ p.big {
   overflow: hidden;
   position: relative;
   min-height: 100vh;
+  padding-top: 113px;
 }
 .main__bg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
   max-width: 1500px;
+  position: absolute;
   z-index: -1;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .main__bg-image {
   display: -webkit-box;
@@ -242,8 +257,8 @@ p.big {
   color: #2D2D2D;
   font-size: 15px;
   line-height: 18px;
-  -webkit-box-shadow: -1px 8px 19px 0px #0000000d;
-          box-shadow: -1px 8px 19px 0px #0000000d;
+  -webkit-box-shadow: -1px 8px 19px 0px #0000000D;
+          box-shadow: -1px 8px 19px 0px #0000000D;
 }
 .button.user {
   padding: 7px 18px;
@@ -267,38 +282,123 @@ p.big {
   width: 100%;
 }
 .button.user p {
-  color: #b5b5b5;
+  color: #B5B5B5;
 }
-.button img {
+
+.popup {
+  position: absolute;
+  top: calc(100% + 13px);
+  right: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: -1px 8px 19px 0px #6565650D;
+          box-shadow: -1px 8px 19px 0px #6565650D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 16px;
+  padding: 25px 36px 25px 23px;
+  width: 350px;
+}
+.popup__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 23px;
+}
+.popup > h4 {
+  margin-bottom: 20px;
+}
+.popup .button {
+  border: 0.5px solid #ECECEC;
+  background-color: transparent;
+  color: #B5B5B5;
+  border-radius: 7px;
+}
+
+.input {
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #F1F1F1;
+  padding: 10px 13px;
+  margin-bottom: 10px;
+}
+.input__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}
+.input__link:last-child {
+  margin-right: 0;
+}
+.input__link img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+.input input {
+  width: calc(100% - 50px);
+  background-color: #F1F1F1;
+  border-radius: 7px;
+  font-family: "Rubik", sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B5B5B5;
 }
 
 .check {
   margin-right: 15px;
   width: 39px;
   height: 18px;
-  background-color: #d9d9d9;
-  border-radius: 16px;
   position: relative;
   cursor: pointer;
 }
 .check__box {
   position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #D9D9D9;
+  border-radius: 16px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .check__box::before {
   content: "";
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 50%;
+  left: 3px;
   width: 14px;
   height: 14px;
   background-color: #fff;
   border-radius: 50%;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .check input {
   position: absolute;
@@ -310,9 +410,43 @@ p.big {
   z-index: 3;
   cursor: pointer;
 }
+.check input:checked ~ .check__box {
+  background-color: #0029FF;
+}
 .check input:checked ~ .check__box::before {
+  -webkit-transform: translate(20px, -50%);
+          transform: translate(20px, -50%);
+}
+
+.progress {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-0.94%, #0029FF), color-stop(77.24%, rgba(0, 41, 255, 0)));
+  background: linear-gradient(90deg, #0029FF -0.94%, rgba(0, 41, 255, 0) 77.24%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  border-radius: 9px;
+}
+.progress__outer {
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  height: 9px;
+  background-color: #F0F0F0;
+  border-radius: 9px;
+}
+.progress__outer p {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 75%;
+}
+.progress__outer p:first-of-type {
+  left: 0;
+}
+.progress__outer p:last-of-type {
   left: unset;
-  right: 2px;
+  right: 0;
 }
 
 table {
@@ -558,6 +692,7 @@ table.extra td h4 small {
   padding: 8px 30px;
   -webkit-box-shadow: -1px 8px 19px 0px #0000000D;
           box-shadow: -1px 8px 19px 0px #0000000D;
+  position: relative;
 }
 .nav__inner-links {
   margin-left: 20px;
