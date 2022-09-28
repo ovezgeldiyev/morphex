@@ -201,37 +201,54 @@ table {
       }
     }
   }
-  &.extra{
-      &::after{
-          display: none;
+  &.extra {
+    &::after {
+      display: none;
+    }
+    tr{
+        &::after{
+            background-color: $white;
+        }
+    }
+    td {
+      padding: 13px 34px;
+      position: relative;
+      font-weight: 400;
+      &:last-child{
+          padding-right: 27px;
+          padding-left: 0;
       }
-      td{
-          padding: 22px 34px;
-          position: relative;
+      &:nth-child(2){
+          width: 25%;
+      }
+      span{
+          margin-left: 70px;
+      }
+      .button{
+          padding: 9px 31px;
+      }
+      h4 {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 15px;
+        span {
+          margin: 0 22px 0 0;
+          width: 26px;
+          height: 26px;
           font-weight: 400;
-          &:first-child{
-              display: flex;
-              align-items: center;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
           }
-          p{
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              font-size: 14px;
-              line-height: 16px;
-              span{
-                  margin: 0 22px 0 0;
-                  width: 26px;
-                  height: 26px;
-                  font-weight: 400;
-                  img{
-                      width: 100%;
-                      height: 100%;
-                      object-fit: contain;
-                  }
-              }
-          }
-          
+        }
+        small{
+            font-size: 13px;
+            color: $gray-2;
+            margin-left: 11px;
+        }
       }
+    }
   }
 }

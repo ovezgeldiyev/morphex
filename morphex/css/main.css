@@ -287,43 +287,53 @@ table.big tbody tr::after {
 table.extra::after {
   display: none;
 }
+table.extra tr::after {
+  background-color: #fff;
+}
 table.extra td {
-  padding: 22px 34px;
+  padding: 13px 34px;
   position: relative;
   font-weight: 400;
 }
-table.extra td:first-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+table.extra td:last-child {
+  padding-right: 27px;
+  padding-left: 0;
 }
-table.extra td p {
+table.extra td:nth-child(2) {
+  width: 25%;
+}
+table.extra td span {
+  margin-left: 70px;
+}
+table.extra td .button {
+  padding: 9px 31px;
+}
+table.extra td h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 15px;
 }
-table.extra td p span {
+table.extra td h4 span {
   margin: 0 22px 0 0;
   width: 26px;
   height: 26px;
   font-weight: 400;
 }
-table.extra td p span img {
+table.extra td h4 span img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+table.extra td h4 small {
+  font-size: 13px;
+  color: #787878;
+  margin-left: 11px;
 }
 
 .header {
