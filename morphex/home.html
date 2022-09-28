@@ -19,7 +19,7 @@
           <nav class="nav">
             <div class="nav__inner">
               <div class="nav__inner-links">
-                <a href="home.html">
+                <a href="home.html" class="active">
                   Home
                 </a>
                 <a href="#">
@@ -41,9 +41,22 @@
                   Voting
                 </a>
               </div>
-              <a href="#" class="button">
-                Connect Wallet
-              </a>
+              <div class="nav__inner-user">
+                <div class="nav__inner-user-icon">
+                    <img src="./images/icons/main-icon.png" alt="">
+                </div>
+                <p>
+                    0
+                </p>
+                <a href="#" class="button user">
+                    <span>
+                        <img src="./images/icons/avatar.svg" alt="">
+                    </span>
+                    <p>
+                        0xC6c...B77D
+                    </p>
+                </a>
+              </div>
             </div>
           </nav>
           <div class="burger" id="menuBtn"></div>
@@ -53,43 +66,82 @@
     <!-- header end
     =========================================== -->
     <main class="main">
-    <!-- intro start
+    <!-- info start
     =========================================== -->
-    <section class="intro">
-      <div class="auto__container">
-        <div class="intro__inner">
-          <div class="intro__inner-row">
-            <div class="intro__inner-row-wrapper">
-              <div class="introItem__wrapper">
-                <div class="introItem">
-                  <div class="introItem__inner">
+    <section class="info">
+        <div class="auto__container">
+          <div class="info__inner">
+            <div class="info__inner-head">
+                <div class="info__inner-head-item">
                     <a href="#" class="button uniq">
-                      Welcome
+                        Welcome
                     </a>
-                  </div>
                 </div>
-                <div class="introItem">
-                  <div class="introItem__inner">
+                <div class="info__inner-head-item">
                     <p class="big">
-                      Please connect your wallet to continue
+                        This year we have seen various multicoloured gradients with vibrant color palettes and irregular shapes with blur .
                     </p>
-                  </div>
                 </div>
-              </div>
-              <div class="introItem">
-                <div class="introItem__inner">
-                  <a href="#" class="button">
-                    Connect Wallet
-                  </a>
+            </div>
+            <div class="info__inner-row">
+                <div class="info__inner-col">
+                    <div class="infoItem">
+                        <h4>
+                            Total Collateral
+                        </h4>
+                        <div class="infoItem__price">
+                            <h4>
+                                0.00 USD
+                            </h4>
+                            <p>
+                                0 BNB
+                            </p>
+                        </div>
+                    </div>
+                    <div class="infoItem">
+                        <h4>
+                            Total Borrowed
+                        </h4>
+                        <div class="infoItem__price">
+                            <h4>
+                                0.00 USD
+                            </h4>
+                            <p>
+                                0 BNB
+                            </p>
+                        </div>
+                    </div>
+                    <div class="infoItem">
+                        <h4>
+                            Net Asset Value 
+                            <span>
+                                <img src="./images/icons/question-circle.svg" alt="">
+                            </span>
+                        </h4>
+                        <div class="infoItem__price">
+                            <h4>
+                                0.00 USD
+                            </h4>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="info__inner-col">
+                    <h4>
+                        Morphex Rewards
+                    </h4>
+                    <h2>
+                        0.00 MPX
+                    </h2>
+                    <div class="info__inner-col-bg">
+                        <img src="./images/blue-shape.png" alt="">
+                    </div>
+                </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- intro end
-    =========================================== -->
+      </section>
+      <!-- info end
+      =========================================== -->
     <!-- footer start
     =========================================== -->
     <footer class="footer">
