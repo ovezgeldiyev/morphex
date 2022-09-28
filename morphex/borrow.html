@@ -25,7 +25,7 @@
                 <a href="#">
                   Liquidations
                 </a>
-                <a href="borrow.html">
+                <a href="borrow.html" class="active">
                   Borrow
                 </a>
                 <a href="#">
@@ -41,9 +41,22 @@
                   Voting
                 </a>
               </div>
-              <a href="#" class="button">
-                Connect Wallet
-              </a>
+              <div class="nav__inner-user">
+                <div class="nav__inner-user-icon">
+                    <img src="./images/icons/main-icon.png" alt="">
+                </div>
+                <p>
+                    0
+                </p>
+                <a href="#" class="button user">
+                    <span>
+                        <img src="./images/icons/avatar.svg" alt="">
+                    </span>
+                    <p>
+                        0xC6c...B77D
+                    </p>
+                </a>
+              </div>
             </div>
           </nav>
           <div class="burger" id="menuBtn"></div>
@@ -53,42 +66,111 @@
     <!-- header end
     =========================================== -->
     <main class="main">
-    <!-- intro start
+    <!-- borrow start
     =========================================== -->
-    <section class="intro">
-      <div class="auto__container">
-        <div class="intro__inner">
-          <div class="intro__inner-row">
-            <div class="intro__inner-row-wrapper">
-              <div class="introItem__wrapper">
-                <div class="introItem">
-                  <div class="introItem__inner">
-                    <a href="#" class="button uniq">
-                      Welcome
-                    </a>
-                  </div>
+    <section class="borrow">
+        <div class="auto__container">
+          <div class="borrow__inner">
+            <div class="borrow__inner-row">
+                <div class="borrow__inner-col">
+                    <div class="borrow__inner-col-top">
+                        <h4>
+                            My Collateral
+                        </h4>
+                        <h3>
+                            <span>
+                                <img src="./images/icons/main-icon.png" alt="">
+                            </span> 
+                            0.00 BNB
+                        </h3>
+                    </div>
+                    <div class="borrow__inner-col-bottom">
+                        <div class="borrowItem">
+                            <h4>
+                                Net Borrowing APR
+                                <span>
+                                    <img src="./images/icons/question-circle.svg" alt="">
+                                </span>
+                            </h4>
+                            <div class="borrowItem__side">
+                                <h4>
+                                    Morphex Rewards
+                                    <span>
+                                        <img src="./images/icons/question-circle.svg" alt="">
+                                    </span>
+                                </h4>
+                                <h3>
+                                    0%
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="borrowItem">
+                            <h2>
+                                2%
+                            </h2>
+                            <div class="borrowItem__side">
+                                <h4>
+                                    Borrowing APR (Fee)
+                                    <span>
+                                        <img src="./images/icons/question-circle.svg" alt="">
+                                    </span>
+                                </h4>
+                                <h3>
+                                    2%
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="introItem">
-                  <div class="introItem__inner">
-                    <p class="big">
-                      Please connect your wallet to continue
-                    </p>
-                  </div>
+                <div class="borrow__inner-col">
+                    <div class="borrow__inner-col-top">
+                        <h4>
+                            My Collateral
+                        </h4>
+                        <h3>
+                            <span>
+                                <img src="./images/icons/main-icon.png" alt="">
+                            </span> 
+                            0.00 BNB
+                        </h3>
+                    </div>
+                    <div class="borrow__inner-col-bottom">
+                        <div class="borrowLine">
+                            <h4>
+                                Borrowing Utilization
+                            </h4>
+                            <div class="borrowLine__side">
+                                <div class="check">
+                                    <input type="checkbox">
+                                    <div class="check__box"></div>
+                                </div>
+                                <h4>
+                                    Liquidation Alert
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="borrowLine">
+                            <div class="progress">
+
+                            </div>
+                        </div>
+                        <div class="borrowLine">
+                            <h4>
+                               Liquidation BNB price: $0
+                            </h4>
+                            <div class="borrowLine__side">
+                                <h4>
+                                    Borrow Limit: $0
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="introItem">
-                <div class="introItem__inner">
-                  <a href="#" class="button">
-                    Connect Wallet
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- intro end
+      </section>
+      <!-- intro end
     =========================================== -->
     <!-- footer start
     =========================================== -->

@@ -8,7 +8,6 @@
         border-radius: 30px;
         padding: 8px 30px;
         box-shadow: -1px 8px 19px 0px #0000000D;
-
         &-links {
             margin-left: 20px;
             a {
@@ -26,6 +25,29 @@
                 &:last-child {
                     margin-right: 0;
                 }
+            }
+        }
+        &-user {
+            display: flex;
+            align-items: center;
+            background-color: #F6F6F6;
+            padding-left: 16px;
+            box-shadow: -1px 8px 19px 0px #0000000D;
+            border-radius: 14px;
+            &-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 23px;
+                height: 23px;
+                margin-right: 6px;
+                img {
+                    width: 100%;
+                }
+            }
+            > p {
+                color: $black;
+                margin-right: 13px;
             }
         }
     }
