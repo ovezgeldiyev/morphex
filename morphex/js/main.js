@@ -7,13 +7,13 @@ menuBtn.onclick = function () {
   menuBtn.classList.toggle("active");
   body.classList.toggle("active");
 };
-window.onclick = function (event) {
-  if (event.target == menu) {
-    menu.classList.remove("active");
-    menuBtn.classList.remove("active");
-    body.classList.remove("active");
-  }
-};
+// window.onclick = function (event) {
+//   if (event.target == menu) {
+//     menu.classList.remove("active");
+//     menuBtn.classList.remove("active");
+//     body.classList.remove("active");
+//   }
+// };
 // menu end
 // scroll start
 let header = document.getElementById("header");
@@ -90,7 +90,19 @@ function onTabClick(tabBtns, tabItems, item) {
 // menu start
 var popup = document.getElementById("popUp");
 var popupBtn = document.getElementById("popupBtn");
+var popupOuter = document.getElementById("popupOuter");
+
 popupBtn.onclick = function () {
   popup.classList.toggle("active");
+  popupOuter.classList.toggle("active");
+  body.classList.toggle("active");
+
+};
+window.onclick = function (event) {
+  if (event.target == popupOuter) {
+    popup.classList.remove("active");
+    popupOuter.classList.remove("active");
+    body.classList.remove("active");
+  }
 };
 

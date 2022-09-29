@@ -1,7 +1,11 @@
 html, body {
   scroll-behavior: smooth;
 }
-
+body {
+  &.active {
+    overflow: hidden;
+  }
+}
 *,
 *::before,
 *::after {
