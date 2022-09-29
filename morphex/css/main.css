@@ -1437,6 +1437,9 @@ table.extra td h4 small {
   margin-bottom: 10px;
   position: relative;
 }
+.aboutItem.sm {
+  margin-bottom: 0;
+}
 .aboutItem__arrow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1447,13 +1450,25 @@ table.extra td h4 small {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 10px;
+  height: 8px;
+  position: relative;
+  margin: 2px;
+}
+.aboutItem__arrow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 20px;
   height: 20px;
   background-color: #D9D9D9;
   border-radius: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  z-index: 4;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .aboutItem__arrow-wrapper {
   display: -webkit-box;
@@ -1469,6 +1484,8 @@ table.extra td h4 small {
 .aboutItem__arrow img {
   width: 100%;
   max-width: 8px;
+  position: relative;
+  z-index: 3;
 }
 .aboutItem .aboutInfo {
   margin: 10px 0 0 0;
