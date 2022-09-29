@@ -1438,9 +1438,6 @@ table.extra td h4 small {
   position: relative;
 }
 .aboutItem__arrow {
-  position: absolute;
-  top: calc(100% - 4px);
-  left: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1458,12 +1455,20 @@ table.extra td h4 small {
           transform: translateX(-50%);
   z-index: 4;
 }
+.aboutItem__arrow-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .aboutItem__arrow img {
   width: 100%;
   max-width: 8px;
-}
-.aboutItem:last-child {
-  margin-bottom: 20px;
 }
 .aboutItem .aboutInfo {
   margin: 10px 0 0 0;
@@ -1532,7 +1537,7 @@ table.extra td h4 small {
   background-color: #F1F1F1;
   padding: 8px 12px;
   border-radius: 7px;
-  margin-bottom: 9px;
+  margin: 9px 0;
 }
 
 @media (max-width: 1024px) {

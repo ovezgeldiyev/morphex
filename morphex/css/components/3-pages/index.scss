@@ -416,9 +416,6 @@
         margin-bottom: 10px;
         position: relative;
         &__arrow {
-            position: absolute;
-            top: calc(100% - 4px);
-            left: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -428,13 +425,15 @@
             border-radius: 50%;
             transform: translateX(-50%);
             z-index: 4;
+            &-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
             img {
                 width: 100%;
                 max-width: 8px;
             }
-        }
-        &:last-child {
-            margin-bottom: 20px;
         }
         .aboutInfo {
             margin: 10px 0 0 0;
@@ -478,6 +477,6 @@
         background-color: $light-gray;
         padding: 8px 12px;
         border-radius: 7px;
-        margin-bottom: 9px;
+        margin: 9px 0;
     }
 }
