@@ -758,6 +758,29 @@ h6 {
   line-height: 16px;
 }
 
+.main__bg.gauges .main__bg-image {
+  left: -20%;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+.main__bg.gauges .main__bg-image.right {
+  width: 55%;
+  left: unset;
+  -webkit-transform: translateY(-70%) rotate(270deg);
+          transform: translateY(-70%) rotate(270deg);
+}
+.main__bg.staking .main__bg-image {
+  left: -30%;
+  -webkit-transform: translateY(-60%) rotate(330deg);
+          transform: translateY(-60%) rotate(330deg);
+}
+.main__bg.staking .main__bg-image.right {
+  left: unset;
+  right: -5%;
+  -webkit-transform: translateY(-50%) rotate(330deg);
+          transform: translateY(-50%) rotate(330deg);
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -1093,13 +1116,13 @@ h6 {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: calc(100% + 72px);
+  width: calc(100% + 68px);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   max-width: 1232px;
 }
 .intro__inner {
-  padding: 36px;
+  padding: 34px;
   background-color: transparent;
   border: 1px #D3D7ED solid;
   border-radius: 36px;
@@ -1142,7 +1165,7 @@ h6 {
 .introItem {
   border-radius: 22px;
   position: relative;
-  width: 20%;
+  width: 22%;
   max-width: 198px;
 }
 .introItem__wrapper {
@@ -1152,7 +1175,7 @@ h6 {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  width: calc(80% - 20px);
+  width: calc(78% - 20px);
 }
 .introItem__wrapper .introItem {
   width: calc(30% - 8px);
@@ -1801,8 +1824,45 @@ h6 {
   background-color: #EBEBEB;
 }
 
+@media (max-width: 1180px) {
+  .intro__inner {
+    padding: 30px;
+  }
+  .intro__inner-row-wrapper {
+    padding: 45px 55px;
+  }
+
+  .info__inner-head-item {
+    padding: 10px 18px;
+  }
+  .info__inner-head-item:last-child {
+    width: calc(82% - 16px);
+  }
+  .info__inner-head-item p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .nav__inner-links a {
+    margin-right: 36px;
+  }
+}
 @media (max-width: 1024px) {
   ::-webkit-scrollbar {
     display: none;
+  }
+
+  .auto__container {
+    padding: 0 30px;
+  }
+
+  .intro {
+    width: calc(100% + 50px);
+  }
+  .introItem__wrapper {
+    width: calc(78% - 8px);
+  }
+  .introItem__wrapper .introItem {
+    margin-right: 12px;
   }
 }

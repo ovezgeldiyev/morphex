@@ -112,6 +112,18 @@
         }
     }
 }
+// 1180pxpx
+@mixin nav-xlg-xxlg {
+    .nav {
+        &__inner {
+            &-links {
+                a {
+                    margin-right: 36px;
+                }
+            }
+        }
+    }
+}
 // 1024px
 @mixin nav-lg-xlg {
     body.active {

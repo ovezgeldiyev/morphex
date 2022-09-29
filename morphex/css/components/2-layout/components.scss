@@ -628,3 +628,29 @@ h6 {
 
 
 
+.main {
+  &__bg {
+      &.gauges {
+        .main__bg-image {
+          left: -20%;
+          transform: translateY(-50%) rotate(180deg);
+          &.right {
+            width: 55%;
+            left: unset;
+            transform: translateY(-70%) rotate(270deg);
+          }
+        }
+      }
+      &.staking {
+        .main__bg-image {
+          left: -30%;
+          transform: translateY(-60%) rotate(330deg);
+          &.right {
+            left: unset;
+            right: -5%;
+            transform: translateY(-50%) rotate(330deg);
+          }
+        }
+      }
+  }
+}

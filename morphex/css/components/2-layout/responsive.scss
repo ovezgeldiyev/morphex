@@ -13,11 +13,17 @@
 // 1180px
 @include xlg-xxlg {
     @include intro-xlg-xxlg;
+    @include info-xlg-xxlg;
+    @include nav-xlg-xxlg;
+
 }
 // 1024px
 @include lg-xlg {
     ::-webkit-scrollbar{
         display: none;
+    }
+    .auto__container {
+        padding: 0 30px;
     }
     @include intro-lg-xlg;
 }
