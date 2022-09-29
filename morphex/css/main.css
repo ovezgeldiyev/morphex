@@ -103,7 +103,153 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
 }
-h3 span {
+
+h4 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+h4 span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 12px;
+  height: 12px;
+  margin-left: 6px;
+}
+h4 span img {
+  width: 100%;
+}
+
+p.sm {
+  font-size: 10px;
+  line-height: 12px;
+}
+p.big {
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.main {
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+.main__bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  max-width: 1500px;
+  z-index: -1;
+}
+.main__bg-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  left: -8%;
+  width: 58%;
+  height: 100%;
+  max-height: 900px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.main__bg-image.right {
+  left: unset;
+  right: -8%;
+}
+.main__bg-image img {
+  width: 100%;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0029FF;
+  border-radius: 11px;
+  padding: 10px 23px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #fff;
+}
+.button.uniq {
+  border-radius: 14px;
+  padding: 13px 20px;
+  background-color: #F1F1F1;
+  color: #2D2D2D;
+  font-size: 15px;
+  line-height: 18px;
+  -webkit-box-shadow: -1px 8px 19px 0px #0000000d;
+          box-shadow: -1px 8px 19px 0px #0000000d;
+}
+.button.user {
+  padding: 7px 18px;
+  background-color: #fff;
+}
+.button.user span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+  width: 23px;
+  height: 23px;
+}
+.button.user span img {
+  width: 100%;
+}
+.button.user p {
+  color: #b5b5b5;
+}
+.button img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.button span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,7 +263,7 @@ h3 span {
   height: 23px;
   margin-right: 13px;
 }
-h3 span img {
+.button span img {
   width: 100%;
 }
 
@@ -470,6 +616,7 @@ table {
   border-collapse: separate;
   border-spacing: 0 12px;
   position: relative;
+  white-space: nowrap;
 }
 table th {
   font-size: 14px;
@@ -548,11 +695,15 @@ table.big thead:first-child th {
   color: #787878;
   padding: 24px 49px 34px;
 }
-table.big thead:first-child th span {
+table.big thead:first-child th h6 p {
+  display: inline-block;
+  text-align: center;
+}
+table.big thead:first-child th h6 p span {
   display: block;
-  color: #2D2D2D;
   margin-top: 15px;
   font-size: 13px;
+  color: #2D2D2D;
 }
 table.big thead:first-child th:first-child {
   padding-left: 99px;
@@ -586,9 +737,6 @@ table.extra td:last-child {
   padding-right: 27px;
   padding-left: 0;
 }
-table.extra td:nth-child(2) {
-  width: 25%;
-}
 table.extra td span {
   margin-left: 70px;
 }
@@ -621,6 +769,57 @@ table.extra td h4 small {
   font-size: 13px;
   color: #787878;
   margin-left: 11px;
+}
+table.sm::after {
+  display: none;
+}
+table.sm th {
+  padding: 13px 20px;
+  font-size: 15px;
+  line-height: 17px;
+}
+table.sm th svg {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  fill: #000;
+  margin-left: 7px;
+}
+table.sm td {
+  padding: 13px 20px;
+  font-size: 15px;
+  line-height: 17px;
+}
+table.sm td span {
+  margin-left: 12px;
+}
+table.sm td h5 {
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 300;
+}
+table.sm td h5 span {
+  margin-left: unset;
+}
+table.sm td .bar {
+  width: calc(80% - 68px);
+  display: inline-block;
+  height: 6px;
+  background-color: #D9D9D9;
+  border-radius: 3px;
+  margin-left: 11px;
+}
+table.sm tbody tr:after {
+  display: none;
+}
+table.sm tbody tr.bg:after {
+  background: rgba(255, 255, 254, 0.1);
+  display: block;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .header {
@@ -906,9 +1105,6 @@ table.extra td h4 small {
   font-family: "Inter", sans-serif;
 }
 
-.list__inner {
-  padding: 120px 0 0 0;
-}
 .list__inner-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -917,6 +1113,7 @@ table.extra td h4 small {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 12px;
 }
 .list__inner-buttons .button.uniq {
   font-size: 10px;
@@ -941,6 +1138,10 @@ table.extra td h4 small {
 }
 .list__inner-buttons-wrapper .button:last-child {
   margin-right: unset;
+}
+.list__inner-main {
+  overflow: auto;
+  margin: -12px 0;
 }
 
 .intro {
