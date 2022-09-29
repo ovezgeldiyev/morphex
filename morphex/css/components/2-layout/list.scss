@@ -5,6 +5,7 @@
       display: flex;
       width: 100%;
       justify-content: space-between;
+      margin-bottom: 12px;
       .button {
         &.uniq {
           font-size: 10px;
@@ -29,6 +30,10 @@
           }
         }
       }
+    }
+    &-main{
+      overflow: auto;
+      margin: -12px 0;
     }
   }
 }

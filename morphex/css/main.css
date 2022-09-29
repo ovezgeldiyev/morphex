@@ -321,6 +321,7 @@ table {
   border-collapse: separate;
   border-spacing: 0 12px;
   position: relative;
+  white-space: nowrap;
 }
 table th {
   font-size: 14px;
@@ -441,9 +442,6 @@ table.extra td:last-child {
   padding-right: 27px;
   padding-left: 0;
 }
-table.extra td:nth-child(2) {
-  width: 25%;
-}
 table.extra td span {
   margin-left: 70px;
 }
@@ -477,7 +475,6 @@ table.extra td h4 small {
   color: #787878;
   margin-left: 11px;
 }
-
 h6 {
   font-size: 14px;
   line-height: 16px;
@@ -776,6 +773,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 12px;
 }
 .list__inner-buttons .button.uniq {
   font-size: 10px;
@@ -800,6 +798,10 @@ h6 {
 }
 .list__inner-buttons-wrapper .button:last-child {
   margin-right: unset;
+}
+.list__inner-main {
+  overflow: auto;
+  margin: -12px 0;
 }
 
 .intro {
