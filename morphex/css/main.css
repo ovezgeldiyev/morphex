@@ -250,6 +250,35 @@ p.big {
   -webkit-transform: translateY(-50%) rotate(75deg);
           transform: translateY(-50%) rotate(75deg);
 }
+.main__bg.borrow .main__bg-image.circle {
+  -webkit-transform: unset;
+          transform: unset;
+  top: unset;
+  bottom: -25%;
+}
+.main__bg.gauges .main__bg-image.circle-left {
+  max-width: 811px;
+  left: -25%;
+  top: 33%;
+}
+.main__bg.staking .main__bg-image.circle {
+  max-width: 960px;
+  right: unset;
+  top: unset;
+  left: 2%;
+  bottom: -20%;
+  -webkit-transform: unset;
+          transform: unset;
+}
+.main__bg.staking .main__bg-image.circle-left {
+  max-width: 960px;
+  right: unset;
+  top: unset;
+  left: -35%;
+  bottom: -45%;
+  -webkit-transform: unset;
+          transform: unset;
+}
 .main__bg.mlqdr .main__bg-image {
   width: 50%;
   left: -20%;
@@ -639,16 +668,16 @@ table.extra td {
   padding: 13px 34px;
   position: relative;
   font-weight: 400;
-}
-table.extra td:last-child {
-  padding-right: 27px;
-  padding-left: 0;
+  font-size: 14px;
+  line-height: 17px;
 }
 table.extra td span {
   margin-left: 70px;
 }
 table.extra td .button {
-  padding: 9px 31px;
+  padding: 8px 26px;
+  font-size: 15px;
+  line-height: 17px;
 }
 table.extra td h4 {
   display: -webkit-box;
@@ -1012,6 +1041,9 @@ h6 {
   font-family: "Inter", sans-serif;
 }
 
+.list__inner {
+  padding: 7px 0 0 0;
+}
 .list__inner-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1049,6 +1081,12 @@ h6 {
 .list__inner-main {
   overflow: auto;
   margin: -12px 0;
+}
+.list__inner.staking {
+  padding: 25px 0 0 0;
+}
+.list__inner.gauges {
+  padding: unset;
 }
 
 .intro {

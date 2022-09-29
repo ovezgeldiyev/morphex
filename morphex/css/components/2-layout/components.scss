@@ -109,7 +109,6 @@ p {
               left: unset;
               right: -14%;
           }
-
           img {
               width: 100%;
           }
@@ -119,6 +118,40 @@ p {
             transform: translateY(-50%) rotate(-45deg);
             &.right {
               transform: translateY(-50%) rotate(75deg);
+            }
+            &.circle {
+              transform: unset;
+              top: unset;
+              bottom: -25%;
+            }
+          }
+        }
+        &.gauges {
+          .main__bg-image {
+            &.circle-left {
+              max-width: 811px;
+              left: -25%;
+              top: 33%;
+            }
+          }
+        }
+        &.staking {
+          .main__bg-image {
+            &.circle {
+              max-width: 960px;
+              right: unset;
+              top: unset;
+              left: 2%;
+              bottom: -20%;
+              transform: unset;
+            }
+            &.circle-left {
+              max-width: 960px;
+              right: unset;
+              top: unset;
+              left: -35%;
+              bottom: -45%;
+              transform: unset;
             }
           }
         }
@@ -152,7 +185,6 @@ p {
           }
         }
     }
-
 }
 .button {
     display: flex;
@@ -347,7 +379,6 @@ p {
 
 }
 
-
 table {
   width: 100%;
   text-align: left;
@@ -487,22 +518,23 @@ table {
       &::after {
         background-color: $white;
       }
+      
     }
     td {
       padding: 13px 34px;
       position: relative;
       font-weight: 400;
-      &:last-child {
-        padding-right: 27px;
-        padding-left: 0;
-      }
+      font-size: 14px;
+      line-height: 17px;
     
 
       span {
         margin-left: 70px;
       }
       .button {
-        padding: 9px 31px;
+        padding: 8px 26px;
+        font-size: 15px;
+        line-height:17px ;
       }
       h4 {
         display: flex;
@@ -528,58 +560,55 @@ table {
       }
     }
   }
-  &.sm{
-    &::after{
+  &.sm {
+    &::after {
       display: none;
     }
-    th{
+    th {
       padding: 13px 20px;
       font-size: 15px;
       line-height: 17px;
-      svg{
+      svg {
         display: inline-block;
-        width:12px;
+        width: 12px;
         height: 12px;
         fill: $black;
         margin-left: 7px;
       }
-     
     }
-    td{
+    td {
       padding: 13px 20px;
       font-size: 15px;
       line-height: 17px;
-      span{
+      span {
         margin-left: 12px;
       }
-      h5{
+      h5 {
         font-size: 15px;
         line-height: 17px;
         font-weight: 300;
-        span{
+        span {
           margin-left: unset;
         }
       }
-      .bar{
-        width:calc(80% - 68px) ;
+      .bar {
+        width: calc(80% - 68px);
         display: inline-block;
         height: 6px;
         background-color: $gray-5;
         border-radius: 3px;
         margin-left: 11px;
-
       }
     }
-    tbody{
-      tr{
-        &:after{
+    tbody {
+      tr {
+        &:after {
           display: none;
         }
-        &.bg{
-          &:after{
+        &.bg {
+          &:after {
             background: rgba(255, 255, 254, 0.1);
-          display: block;
-
+            display: block;
           }
         }
       }
@@ -591,3 +620,11 @@ h6 {
   font-size: 14px;
   line-height: 16px;
 }
+
+
+
+
+
+
+
+
