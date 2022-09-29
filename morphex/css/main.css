@@ -257,6 +257,34 @@ p.big {
   left: -22%;
   top: -11%;
 }
+.main__bg.gauges .main__bg-image {
+  left: -20%;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+.main__bg.gauges .main__bg-image.right {
+  width: 55%;
+  left: unset;
+  -webkit-transform: translateY(-70%) rotate(270deg);
+          transform: translateY(-70%) rotate(270deg);
+}
+.main__bg.staking .main__bg-image {
+  left: -30%;
+  -webkit-transform: translateY(-60%) rotate(330deg);
+          transform: translateY(-60%) rotate(330deg);
+}
+.main__bg.staking .main__bg-image.right {
+  left: unset;
+  right: -5%;
+  -webkit-transform: translateY(-50%) rotate(330deg);
+          transform: translateY(-50%) rotate(330deg);
+}
+.main__bg.staking .main__bg-circle {
+  right: unset;
+  top: unset;
+  bottom: -45%;
+  left: -25%;
+}
 .main__bg.borrow .main__bg-image {
   -webkit-transform: translateY(-50%) rotate(-45deg);
           transform: translateY(-50%) rotate(-45deg);
@@ -272,12 +300,6 @@ p.big {
 .main__bg.borrow .main__bg-circle.left {
   bottom: unset;
   top: -30%;
-}
-.main__bg.staking .main__bg-circle {
-  right: unset;
-  top: unset;
-  bottom: -45%;
-  left: -25%;
 }
 .main__bg.mlqdr .main__bg-image {
   width: 50%;
@@ -764,29 +786,6 @@ table.sm tbody tr.bg:after {
 h6 {
   font-size: 14px;
   line-height: 16px;
-}
-
-.main__bg.gauges .main__bg-image {
-  left: -20%;
-  -webkit-transform: translateY(-50%) rotate(180deg);
-          transform: translateY(-50%) rotate(180deg);
-}
-.main__bg.gauges .main__bg-image.right {
-  width: 55%;
-  left: unset;
-  -webkit-transform: translateY(-70%) rotate(270deg);
-          transform: translateY(-70%) rotate(270deg);
-}
-.main__bg.staking .main__bg-image {
-  left: -30%;
-  -webkit-transform: translateY(-60%) rotate(330deg);
-          transform: translateY(-60%) rotate(330deg);
-}
-.main__bg.staking .main__bg-image.right {
-  left: unset;
-  right: -5%;
-  -webkit-transform: translateY(-50%) rotate(330deg);
-          transform: translateY(-50%) rotate(330deg);
 }
 
 .header {
