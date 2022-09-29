@@ -242,6 +242,21 @@ p.big {
 .main__bg-image img {
   width: 100%;
 }
+.main__bg-circle {
+  width: 80%;
+  max-width: 900px;
+  position: absolute;
+  top: -30%;
+  right: -22%;
+}
+.main__bg-circle img {
+  width: 100%;
+}
+.main__bg-circle.left {
+  right: unset;
+  left: -22%;
+  top: -11%;
+}
 .main__bg.borrow .main__bg-image {
   -webkit-transform: translateY(-50%) rotate(-45deg);
           transform: translateY(-50%) rotate(-45deg);
@@ -250,34 +265,19 @@ p.big {
   -webkit-transform: translateY(-50%) rotate(75deg);
           transform: translateY(-50%) rotate(75deg);
 }
-.main__bg.borrow .main__bg-image.circle {
-  -webkit-transform: unset;
-          transform: unset;
+.main__bg.borrow .main__bg-circle {
   top: unset;
-  bottom: -25%;
+  bottom: -30%;
 }
-.main__bg.gauges .main__bg-image.circle-left {
-  max-width: 811px;
-  left: -25%;
-  top: 33%;
+.main__bg.borrow .main__bg-circle.left {
+  bottom: unset;
+  top: -30%;
 }
-.main__bg.staking .main__bg-image.circle {
-  max-width: 960px;
+.main__bg.staking .main__bg-circle {
   right: unset;
   top: unset;
-  left: 2%;
-  bottom: -20%;
-  -webkit-transform: unset;
-          transform: unset;
-}
-.main__bg.staking .main__bg-image.circle-left {
-  max-width: 960px;
-  right: unset;
-  top: unset;
-  left: -35%;
   bottom: -45%;
-  -webkit-transform: unset;
-          transform: unset;
+  left: -25%;
 }
 .main__bg.mlqdr .main__bg-image {
   width: 50%;
