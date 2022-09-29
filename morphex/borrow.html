@@ -1,48 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Rubik:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css" />
-  <title>Home</title>
-</head>
-
-<body>
-  <!-- header start
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- header start
     =========================================== -->
-  <header class="header" id="header">
-    <div class="auto__container">
-      <div class="header__inner">
-        <nav class="nav">
-          <div class="nav__inner">
-            <div class="nav__inner-links">
-              <a href="home.html">
-                Home
-              </a>
-              <a href="liquidations.html">
-                Liquidations
-              </a>
-              <a href="borrow.html" class="active">
-                Borrow
-              </a>
-              <a href="staking.html">
-                Staking
-              </a>
-              <a href="gauges.html">
-                Gauges
-              </a>
-              <a href="#">
-                mLQDR
-              </a>
-              <a href="#">
-                Voting
-              </a>
+    <header class="header" id="header">
+      <div class="auto__container">
+        <div class="header__inner">
+          <nav class="nav">
+            <div class="nav__inner">
+              <div class="nav__inner-links">
+                <a href="home.html">
+                  Home
+                </a>
+                <a href="liquidations.html">
+                  Liquidations
+                </a>
+                <a href="borrow.html" class="active">
+                  Borrow
+                </a>
+                <a href="staking.html">
+                  Staking
+                </a>
+                <a href="gauges.html">
+                  Gauges
+                </a>
+                <a href="mlqdr.html">
+                  mLQDR
+                </a>
+                <a href="#">
+                  Voting
+                </a>
+              </div>
+              <div class="nav__inner-user">
+                <div class="nav__inner-user-icon">
+                    <img src="./images/icons/main-icon.png" alt="">
+                </div>
+                <p>
+                    0
+                </p>
+                <a href="#" class="button user" id="popupBtn">
+                    <span>
+                        <img src="./images/icons/avatar.svg" alt="">
+                    </span>
+                    <p>
+                        0xC6c...B77D
+                    </p>
+                </a>
+              </div>
+              <div class="popup" id="popUp">
+                <h4>
+                    Wallet
+                </h4>
+                <div class="input">
+                    <input type="text" placeholder="0xC6c...B77D">
+                    <a href="#" class="input__link">
+                        <img src="./images/icons/copy.svg" alt="">
+                    </a>
+                    <a href="#" class="input__link">
+                        <img src="./images/icons/share.svg" alt="">
+                    </a>
+                </div>
+                <div class="popup__row">
+                    <h5>
+                        <span>
+                            <img src="./images/icons/main-icon.png" alt="">
+                        </span>
+                        MRX
+                    </h5>
+                    <p>
+                        0
+                    </p>
+                </div>
+                <a href="#" class="button">
+                    Disconnect
+                </a>
+              </div>
             </div>
             <div class="nav__inner-user">
               <div class="nav__inner-user-icon">
@@ -301,7 +344,7 @@
     </footer>
     <!-- footer end
     =========================================== -->
-    <div class="main__bg">
+    <div class="main__bg borrow">
       <div class="main__bg-image">
         <img src="./images/icons/main-bg1.png" alt="">
       </div>

@@ -35,16 +35,57 @@
                 <a href="gauges.html">
                   Gauges
                 </a>
-                <a href="mlqdr.html">
+                <a href="mlqdr.html" class="active">
                   mLQDR
                 </a>
                 <a href="#">
                   Voting
                 </a>
               </div>
-              <a href="#" class="button">
-                Connect Wallet
-              </a>
+              <div class="nav__inner-user">
+                <div class="nav__inner-user-icon">
+                    <img src="./images/icons/main-icon.png" alt="">
+                </div>
+                <p>
+                    0
+                </p>
+                <a href="#" class="button user" id="popupBtn">
+                    <span>
+                        <img src="./images/icons/avatar.svg" alt="">
+                    </span>
+                    <p>
+                        0xC6c...B77D
+                    </p>
+                </a>
+              </div>
+              <div class="popup" id="popUp">
+                <h4>
+                    Wallet
+                </h4>
+                <div class="input">
+                    <input type="text" placeholder="0xC6c...B77D">
+                    <a href="#" class="input__link">
+                        <img src="./images/icons/copy.svg" alt="">
+                    </a>
+                    <a href="#" class="input__link">
+                        <img src="./images/icons/share.svg" alt="">
+                    </a>
+                </div>
+                <div class="popup__row">
+                    <h5>
+                        <span>
+                            <img src="./images/icons/main-icon.png" alt="">
+                        </span>
+                        MRX
+                    </h5>
+                    <p>
+                        0
+                    </p>
+                </div>
+                <a href="#" class="button">
+                    Disconnect
+                </a>
+              </div>
             </div>
           </nav>
           <div class="burger" id="menuBtn"></div>
@@ -54,42 +95,167 @@
     <!-- header end
     =========================================== -->
     <main class="main">
-    <!-- intro start
+    <!-- about start
     =========================================== -->
-    <section class="intro">
-      <div class="auto__container">
-        <div class="intro__inner">
-          <div class="intro__inner-row">
-            <div class="intro__inner-row-wrapper">
-              <div class="introItem__wrapper">
-                <div class="introItem">
-                  <div class="introItem__inner">
-                    <a href="#" class="button uniq">
-                      Welcome
-                    </a>
-                  </div>
-                </div>
-                <div class="introItem">
-                  <div class="introItem__inner">
-                    <p class="big">
-                      Please connect your wallet to continue
+    <section class="about">
+        <div class="auto__container">
+          <div class="about__inner">
+            <div class="about__inner-row">
+                <div class="about__inner-col">
+                    <div class="about__inner-col-top">
+                        <h4>
+                            Most efficient <br>
+                            mLQDR entry
+                        </h4>
+                        <div class="about__inner-col-top-buttons">
+                            <a href="#" class="button">
+                                1 LQDR : 0 mLQDR
+                            </a>
+                            <a href="#" class="button uniq">
+                                Guide
+                            </a>
+                        </div>
+                    </div>
+                    <p class="sm">
+                        Easy mLQDR - LQDR Entry
                     </p>
-                  </div>
+                    <h4>
+                        Mint mLQDR
+                    </h4>
+                    <div class="aboutItem">
+                        <p class="sm">
+                            Balance
+                        </p>
+                        <div class="aboutItem__row">
+                            <p class="sm">
+                                <span>
+                                    <img src="./images/icons/lqdr.svg" alt="">
+                                </span>
+                                LQDR
+                            </p>
+                            <p class="sm">
+                                0
+                            </p>
+                        </div>
+                    </div>
+                    <div class="aboutItem">
+                        <p class="sm">
+                            Balance
+                        </p>
+                        <div class="aboutItem__row">
+                            <p class="sm">
+                                <span>
+                                    <img src="./images/icons/mlqdr.svg" alt="">
+                                </span>
+                                mLQDR
+                            </p>
+                            <p class="sm">
+                                0
+                            </p>
+                        </div>
+                    </div>
+                    <div class="aboutInfo">
+                        <p class="sm">
+                            0.0
+                        </p>
+                        <a href="#" class="button">
+                            50% MAX
+                        </a>
+                    </div>
+                    <a href="#" class="button">
+                        Approve
+                    </a>
                 </div>
-              </div>
-              <div class="introItem">
-                <div class="introItem__inner">
-                  <a href="#" class="button">
-                    Connect Wallet
-                  </a>
+                <div class="about__inner-col">
+                    <div class="about__inner-col-top big">
+                        <h4>
+                            Swap
+                            <small>
+                                mLQDR & LQDR
+                            </small>
+                        </h4>
+                        <a href="#" class="button uniq">
+                            Manage Liquidity
+                        </a>
+                    </div>
+                    <div class="aboutItem">
+                        <p class="sm">
+                            Input
+                        </p>
+                        <div class="aboutItem__row">
+                            <p class="sm">
+                                <span>
+                                    <img src="./images/icons/lqdr.svg" alt="">
+                                </span>
+                                LQDR
+                            </p>
+                            <div class="aboutItem__row-side">
+                                <p class="sm">
+                                    0.0
+                                </p>
+                                <a href="#" class="button">
+                                    50% MAX
+                                </a>
+                            </div>
+                        </div>
+                        <div class="aboutInfo">
+                            <p class="sm">
+                                Balance
+                            </p>
+                            <p class="sm">
+                                0.0
+                            </p>
+                        </div>
+                        <div class="aboutItem__arrow">
+                            <img src="./images/icons/arrow.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="aboutItem">
+                        <p class="sm">
+                            Output
+                        </p>
+                        <div class="aboutItem__row">
+                            <p class="sm">
+                                <span>
+                                    <img src="./images/icons/mlqdr.svg" alt="">
+                                </span>
+                                LQDR
+                            </p>
+                            <div class="aboutItem__row-side">
+                                <p class="sm">
+                                    0.0
+                                </p>
+                                <a href="#" class="button">
+                                    50% MAX
+                                </a>
+                            </div>
+                        </div>
+                        <div class="aboutInfo">
+                            <p class="sm">
+                                Balance
+                            </p>
+                            <p class="sm">
+                                0.0
+                            </p>
+                        </div>
+                    </div>
+                    <div class="aboutInfo">
+                        <p class="sm">
+                            Price  impact
+                        </p>
+                        <p class="sm">
+                            0.00%
+                        </p>
+                    </div>
+                    <a href="#" class="button">
+                        Approve
+                    </a>
                 </div>
-              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- intro end
+      </section>
+      <!-- intro end
     =========================================== -->
     <!-- footer start
     =========================================== -->
@@ -126,7 +292,7 @@
     </footer>
     <!-- footer end
     =========================================== -->
-    <div class="main__bg">
+    <div class="main__bg borrow">
       <div class="main__bg-image">
         <img src="./images/icons/main-bg1.png" alt="">
       </div>

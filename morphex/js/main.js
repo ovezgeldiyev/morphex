@@ -87,4 +87,10 @@ function onTabClick(tabBtns, tabItems, item) {
 }
 // faq end
 
+// menu start
+var popup = document.getElementById("popUp");
+var popupBtn = document.getElementById("popupBtn");
+popupBtn.onclick = function () {
+  popup.classList.toggle("active");
+};
 

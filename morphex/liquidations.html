@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Rubik:wght@300;400;500;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animate.css">
   <title>Home</title>
 </head>
 
@@ -22,13 +23,13 @@
         <nav class="nav">
           <div class="nav__inner">
             <div class="nav__inner-links">
-              <a href="./home.html" >
+              <a href="home.html" >
                 Home
               </a>
               <a href="./liquidations.html" class="active">
                 Liquidations
               </a>
-              <a href="./borrow.html">
+              <a href="borrow.html">
                 Borrow
               </a>
               <a href="./staking.html">
@@ -37,7 +38,7 @@
               <a href="./gauges.html">
                 Gauges
               </a>
-              <a href="#">
+              <a href="mlqdr.html">
                 mLQDR
               </a>
               <a href="#">
@@ -51,13 +52,41 @@
               <p>
                   0
               </p>
-              <a href="#" class="button user">
+              <a href="#" class="button user" id="popupBtn">
                   <span>
                       <img src="./images/icons/avatar.svg" alt="">
                   </span>
                   <p>
                       0xC6c...B77D
                   </p>
+              </a>
+            </div>
+            <div class="popup" id="popUp">
+              <h4>
+                  Wallet
+              </h4>
+              <div class="input">
+                  <input type="text" placeholder="0xC6c...B77D">
+                  <a href="#" class="input__link">
+                      <img src="./images/icons/copy.svg" alt="">
+                  </a>
+                  <a href="#" class="input__link">
+                      <img src="./images/icons/share.svg" alt="">
+                  </a>
+              </div>
+              <div class="popup__row">
+                  <h5>
+                      <span>
+                          <img src="./images/icons/main-icon.png" alt="">
+                      </span>
+                      MRX
+                  </h5>
+                  <p>
+                      0
+                  </p>
+              </div>
+              <a href="#" class="button">
+                  Disconnect
               </a>
             </div>
           </div>
