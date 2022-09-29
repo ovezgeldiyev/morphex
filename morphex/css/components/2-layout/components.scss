@@ -113,46 +113,50 @@ p {
               width: 100%;
           }
         }
+        &-circle{
+          width: 80%;
+          max-width:900px;
+          position: absolute;
+          top: -30%;
+          right: -22%;
+          img{
+            width: 100%;
+          }
+          &.left{
+            right: unset;
+            left: -22%;
+            top: -11%;
+          }
+        }
         &.borrow {
           .main__bg-image {
             transform: translateY(-50%) rotate(-45deg);
             &.right {
               transform: translateY(-50%) rotate(75deg);
             }
-            &.circle {
-              transform: unset;
-              top: unset;
-              bottom: -25%;
+           
+          }
+          .main__bg-circle{
+            top: unset;
+            bottom: -30%;
+            &.left{
+              bottom: unset;
+              top: -30%;
+
             }
           }
         }
         &.gauges {
           .main__bg-image {
-            &.circle-left {
-              max-width: 811px;
-              left: -25%;
-              top: 33%;
-            }
+           
           }
         }
         &.staking {
-          .main__bg-image {
-            &.circle {
-              max-width: 960px;
-              right: unset;
-              top: unset;
-              left: 2%;
-              bottom: -20%;
-              transform: unset;
-            }
-            &.circle-left {
-              max-width: 960px;
-              right: unset;
-              top: unset;
-              left: -35%;
-              bottom: -45%;
-              transform: unset;
-            }
+          .main__bg-circle {
+            right: unset;
+            top: unset;
+            bottom: -45%;
+            left: -25%;
           }
         }
         &.mlqdr {
@@ -184,6 +188,7 @@ p {
             }
           }
         }
+        
     }
 }
 .button {
@@ -568,13 +573,17 @@ table {
       padding: 13px 20px;
       font-size: 15px;
       line-height: 17px;
-      svg {
-        display: inline-block;
-        width: 12px;
-        height: 12px;
-        fill: $black;
-        margin-left: 7px;
-      }
+        svg {
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          fill: $black;
+          margin-left: 7px;
+        }
+        &:nth-child(5){
+          display: flex;
+          align-items: center;
+        }
     }
     td {
       padding: 13px 20px;
