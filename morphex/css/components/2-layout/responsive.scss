@@ -48,10 +48,14 @@
         padding: 0 20px;
     }
     @include intro-sm-md;
+    @include info-sm-md;
+
 }
 // 650px
 @include sm-md-extra {
     @include intro-sm-md-extra;
+    @include info-sm-md-extra;
+
 }
 // 540px
 @include xsm-sm  {
@@ -59,6 +63,7 @@
         padding: 80px 0 90px ;
     }
     @include intro-xsm-sm;
+    @include info-xsm-sm;
     @include header-xsm-sm;
     @include nav-xsm-sm;
 
@@ -71,9 +76,14 @@
             &.index {
                 display: none
             }
+            &.home {
+                display: none
+            }
         }
     }
     @include intro-xxsm-xsm;
+    @include info-xxsm-xsm;
+
 }
 // 390px
 @include xxxsm-xxsm  {
