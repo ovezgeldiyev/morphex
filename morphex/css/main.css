@@ -1923,16 +1923,6 @@ h6 {
   body.active {
     overflow: hidden;
   }
-
-  .nav__inner {
-    padding: 8px 20px;
-  }
-  .nav__inner-links {
-    margin-left: 10px;
-  }
-  .nav__inner-links a {
-    margin-right: 22px;
-  }
 }
 @media (max-width: 930px) {
   .intro {
