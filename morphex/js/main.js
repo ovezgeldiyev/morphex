@@ -7,13 +7,18 @@ menuBtn.onclick = function () {
   menuBtn.classList.toggle("active");
   body.classList.toggle("active");
 };
-// window.onclick = function (event) {
-//   if (event.target == menu) {
-//     menu.classList.remove("active");
-//     menuBtn.classList.remove("active");
-//     body.classList.remove("active");
-//   }
-// };
+window.onclick = function (event) {
+  if (event.target == menu) {
+    menu.classList.remove("active");
+    menuBtn.classList.remove("active");
+    body.classList.remove("active");
+  }
+  if (event.target == popupOuter) {
+    popup.classList.remove("active");
+    popupOuter.classList.remove("active");
+    body.classList.remove("active");
+  }
+};
 // menu end
 // scroll start
 let header = document.getElementById("header");
@@ -98,11 +103,5 @@ popupBtn.onclick = function () {
   body.classList.toggle("active");
 
 };
-window.onclick = function (event) {
-  if (event.target == popupOuter) {
-    popup.classList.remove("active");
-    popupOuter.classList.remove("active");
-    body.classList.remove("active");
-  }
-};
+
 
