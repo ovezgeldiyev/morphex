@@ -164,23 +164,24 @@
 @mixin nav-md-lg {
   .nav {
     position: fixed;
-    top: 50%;
+    top: 0;
     left: 0;
     width: 100%;
-    height: calc(100% - 24px);
-    transform: translate(100%, -50%);
+    height: 100%;
+    transform: translateX(100%);
     z-index: 10;
     @include transition;
     &__inner {
       position: absolute;
       right: 0;
-      top: 0;
+      top: 50%;
       width: 195px;
-      height: 100%;
+      height: calc(100% - 24px);
       padding: 30px 25px 30px 50px;
       background: #fffffe;
       box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.02);
       border-radius: 82px 0px 0px 82px;
+      transform: translateY(-50%);
       &-links {
         margin: 0;
         flex-direction: column;
@@ -193,9 +194,8 @@
         display: flex;
       }
     }
-
     &.active {
-      transform: translate(0, -50%);
+      transform: translateX(0);
     }
   }
   .burger {
