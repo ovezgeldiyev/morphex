@@ -26,6 +26,8 @@
         padding: 0 30px;
     }
     @include intro-lg-xlg;
+    @include nav-lg-xlg;
+
 }
 // 930px
 @include md-lg {
@@ -33,6 +35,9 @@
 }
 // 750px
 @include sm-md {
+    .auto__container {
+        padding: 0 20px;
+    }
     @include intro-sm-md;
 }
 // 650px
@@ -45,6 +50,13 @@
 }
 // 440px
 @include xxsm-xsm  {
+    .main {
+        &__bg {
+            &.index {
+                display: none
+            }
+        }
+    }
     @include intro-xxsm-xsm;
 }
 // 390px
