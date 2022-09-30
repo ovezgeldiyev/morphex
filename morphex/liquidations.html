@@ -17,84 +17,108 @@
 <body>
   <!-- header start
     =========================================== -->
-  <header class="header" id="header">
-    <div class="auto__container">
-      <div class="header__inner">
-        <nav class="nav">
-          <div class="nav__inner">
-            <div class="nav__inner-links">
-              <a href="home.html" >
-                Home
-              </a>
-              <a href="./liquidations.html" class="active">
-                Liquidations
-              </a>
-              <a href="borrow.html">
-                Borrow
-              </a>
-              <a href="./staking.html">
-                Staking
-              </a>
-              <a href="./gauges.html">
-                Gauges
-              </a>
-              <a href="mlqdr.html">
-                mLQDR
-              </a>
-              <a href="#">
-                Voting
-              </a>
-            </div>
-            <div class="nav__inner-user">
-              <div class="nav__inner-user-icon">
-                  <img src="./images/icons/main-icon.png" alt="">
+    <header class="header" id="header">
+      <div class="auto__container">
+        <div class="header__inner">
+          <nav class="nav" id="menu">
+            <div class="nav__inner">
+              <div class="nav__inner-links">
+                <a href="home.html" >
+                  Home
+                </a>
+                <a href="liquidations.html" class="active">
+                  Liquidations
+                </a>
+                <a href="borrow.html" >
+                  Borrow
+                </a>
+                <a href="staking.html">
+                  Staking
+                </a>
+                <a href="gauges.html" >
+                  Gauges
+                </a>
+                <a href="mlqdr.html">
+                  mLQDR
+                </a>
+                <a href="#">
+                  Voting
+                </a>
               </div>
+              <div class="nav__inner-social">
+                <a href="#">
+                  <svg>
+                    <use xlink:href="#twitter"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg>
+                    <use xlink:href="#telegram"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg>
+                    <use xlink:href="#discord"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg>
+                    <use xlink:href="#medium"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </nav>
+          <div class="header__inner-user">
+            <div class="header__inner-user-icon">
+              <img src="./images/icons/main-icon.png" alt="">
+            </div>
+            <p>
+              0
+            </p>
+            <a href="#" class="button user" id="popupBtn">
+              <span>
+                <img src="./images/icons/avatar.svg" alt="">
+              </span>
               <p>
-                  0
+                0xC6c...B77D
               </p>
-              <a href="#" class="button user" id="popupBtn">
-                  <span>
-                      <img src="./images/icons/avatar.svg" alt="">
-                  </span>
-                  <p>
-                      0xC6c...B77D
-                  </p>
-              </a>
-            </div>
-            <div class="popup" id="popUp">
-              <h4>
-                  Wallet
-              </h4>
-              <div class="input">
-                <input type="text" placeholder="0xC6c...B77D">
-                <button class="input__button">
-                    <img src="./images/icons/copy.svg" alt="">
-                </button>
-                <button class="input__button">
-                    <img src="./images/icons/share.svg" alt="">
-                </button>
-            </div>
-              <div class="popup__row">
-                  <h5>
-                      <span>
-                          <img src="./images/icons/main-icon.png" alt="">
-                      </span>
-                      MRX
-                  </h5>
-                  <p>
-                      0
-                  </p>
-              </div>
-              <a href="#" class="button">
-                  Disconnect
-              </a>
-            </div>
+            </a>
           </div>
-        </nav>
-        <div class="burger" id="menuBtn"></div>
+          <div class="popup" id="popUp">
+            <h4>
+              Wallet
+            </h4>
+            <div class="input">
+              <input type="text" placeholder="0xC6c...B77D">
+              <button class="input__button">
+                <img src="./images/icons/copy.svg" alt="">
+              </button>
+              <button class="input__button">
+                <img src="./images/icons/share.svg" alt="">
+              </button>
+            </div>
+            <div class="popup__row">
+              <h5>
+                <span>
+                  <img src="./images/icons/main-icon.png" alt="">
+                </span>
+                MRX
+              </h5>
+              <p>
+                0
+              </p>
+            </div>
+            <a href="#" class="button">
+              Disconnect
+            </a>
+          </div>
+          <div class="burger" id="menuBtn">
+            <span></span>
+          </div>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
   <!-- header end
     =========================================== -->
   <main class="main sm">

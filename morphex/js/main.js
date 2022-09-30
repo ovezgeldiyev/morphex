@@ -7,37 +7,32 @@ var popupBtn = document.getElementById("popupBtn");
 var popupOuter = document.getElementById("popupOuter");
 var checkbox = document.getElementById("checkbox");
 var progress = document.getElementById("progress");
-// menuBtn.onclick = function () {
-//   menu.classList.toggle("active");
-//   menuBtn.classList.toggle("active");
-//   body.classList.toggle("active");
-// };
-// window.onclick = function (event) {
-//   if (event.target == menu) {
-//     menu.classList.remove("active");
-//     menuBtn.classList.remove("active");
-//     body.classList.remove("active");
-//   }
-// };
-popupBtn.onclick = function () {
-  popup.classList.toggle("active");
-  popupOuter.classList.toggle("active");
+menuBtn.onclick = function () {
+  menu.classList.toggle("active");
+  menuBtn.classList.toggle("active");
   body.classList.toggle("active");
-
 };
 window.onclick = function (event) {
+  if (event.target == menu) {
+    menu.classList.remove("active");
+    menuBtn.classList.remove("active");
+    body.classList.remove("active");
+  }
   if (event.target == popupOuter) {
     popup.classList.remove("active");
     popupOuter.classList.remove("active");
     body.classList.remove("active");
   }
 };
+popupBtn.onclick = function () {
+  popup.classList.toggle("active");
+  popupOuter.classList.toggle("active");
+  body.classList.toggle("active");
+};
+
 checkbox.onclick = function () {
   progress.classList.toggle("active");
 };
-
-
-
 // menu end
 // scroll start
 let header = document.getElementById("header");
@@ -100,7 +95,6 @@ function onTabClick(tabBtns, tabItems, item) {
       tabBtns.forEach(function (item) {
         item.classList.remove("active");
       });
-
       tabItems.forEach(function (item) {
         item.classList.remove("active");
       });
@@ -110,7 +104,3 @@ function onTabClick(tabBtns, tabItems, item) {
   });
 }
 // faq end
-
-
-
-

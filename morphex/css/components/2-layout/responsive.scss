@@ -27,11 +27,17 @@
     }
     @include intro-lg-xlg;
     @include nav-lg-xlg;
+    @include header-lg-xlg;
+
 
 }
 // 930px
 @include md-lg {
     @include intro-md-lg;
+    @include nav-md-lg;
+    @include header-md-lg;
+
+
 }
 // 750px
 @include sm-md {
@@ -52,6 +58,7 @@
 @include xsm-sm  {
     @include intro-xsm-sm;
     @include info-xsm-sm;
+    @include header-xsm-sm;
 
 }
 // 440px
