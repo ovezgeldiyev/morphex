@@ -175,12 +175,15 @@
       position: absolute;
       right: 0;
       top: 0;
+      width: 195px;
       height: 100%;
-      padding: 30px 65px 30px 50px;
+      padding: 30px 25px 30px 50px;
       background: #fffffe;
       box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.02);
       border-radius: 82px 0px 0px 82px;
       &-links {
+        margin: 0;
+        flex-direction: column;
         a {
           display: block;
           margin: 0 0 40px;

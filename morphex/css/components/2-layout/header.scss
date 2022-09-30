@@ -21,7 +21,7 @@
     background-color: $white;
     border-radius: 30px;
     box-shadow: -1px 8px 19px 0px #0000000d;
-
+    position: relative;
     &-logo {
       display: flex;
       justify-content: center;
@@ -92,9 +92,9 @@
             }
           }
         }
-        .pop{
-          top: calc(100% - 13px);
-        }
+      }
+      & > .button {
+        margin-right: 16px;
       }
     }
   }
