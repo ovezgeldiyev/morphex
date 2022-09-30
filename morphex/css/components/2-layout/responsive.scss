@@ -25,6 +25,9 @@
     .auto__container {
         padding: 0 30px;
     }
+    .popup{
+        right: 20px
+    }
     @include intro-lg-xlg;
     @include nav-lg-xlg;
     @include header-lg-xlg;
@@ -35,6 +38,10 @@
 @include md-lg {
     .main{
         padding: 90px 0;
+    }
+    .popup{
+        top: calc(100% - 13px);
+        right: 0;
     }
     @include intro-md-lg;
     @include nav-md-lg;
@@ -62,6 +69,9 @@
     .main{
         padding: 80px 0 90px ;
     }
+    .popup{
+        top: 100%;
+    }
     @include intro-xsm-sm;
     @include info-xsm-sm;
     @include header-xsm-sm;
@@ -80,6 +90,10 @@
                 display: none
             }
         }
+    }
+    .popup{
+        padding: 20px;
+        width: 320px;
     }
     @include intro-xxsm-xsm;
     @include info-xxsm-xsm;

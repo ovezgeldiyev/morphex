@@ -835,6 +835,7 @@ h6 {
   border-radius: 30px;
   -webkit-box-shadow: -1px 8px 19px 0px #0000000d;
           box-shadow: -1px 8px 19px 0px #0000000d;
+  position: relative;
 }
 .header__inner-logo {
   display: -webkit-box;
@@ -1965,6 +1966,10 @@ h6 {
     padding: 0 30px;
   }
 
+  .popup {
+    right: 20px;
+  }
+
   .intro__inner::before {
     width: calc(100% + 52px);
     height: calc(100% + 52px);
@@ -2004,6 +2009,11 @@ h6 {
 @media (max-width: 930px) {
   .main {
     padding: 90px 0;
+  }
+
+  .popup {
+    top: calc(100% - 13px);
+    right: 0;
   }
 
   .intro {
@@ -2049,15 +2059,20 @@ h6 {
     position: absolute;
     right: 0;
     top: 0;
+    width: 195px;
     height: 100%;
-    padding: 30px 65px 30px 50px;
+    padding: 30px 25px 30px 50px;
     background: #fffffe;
     -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.02);
             box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.02);
     border-radius: 82px 0px 0px 82px;
   }
   .nav__inner-links {
-    margin: unset;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .nav__inner-links a {
     display: block;
@@ -2109,6 +2124,9 @@ h6 {
   }
   .header__inner-user .button.user p {
     display: none;
+  }
+  .header__inner > .button {
+    margin-right: 16px;
   }
 }
 @media (max-width: 750px) {
@@ -2217,6 +2235,10 @@ h6 {
 @media (max-width: 540px) {
   .main {
     padding: 80px 0 90px;
+  }
+
+  .popup {
+    top: 100%;
   }
 
   .intro__inner-row-wrapper {
@@ -2331,6 +2353,11 @@ h6 {
     display: none;
   }
 
+  .popup {
+    padding: 20px;
+    width: 320px;
+  }
+
   .intro__inner::before {
     display: none;
   }
@@ -2373,7 +2400,7 @@ h6 {
         -ms-flex-align: center;
             align-items: center;
     padding: 36px 45px 25px;
-    border: 1px #D3D7ED solid;
+    border: 0.5px #D3D7ED solid;
     border-radius: 15px;
   }
   .introItem__wrapper .introItem {
