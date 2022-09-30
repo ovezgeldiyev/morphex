@@ -549,10 +549,10 @@ p.big {
   height: 100%;
 }
 .progress.active .progress__inner {
-  width: 80%;
+  width: 130%;
 }
 .progress__inner {
-  width: 0;
+  width: 80%;
   height: 100%;
   background: -webkit-gradient(linear, left top, right top, color-stop(-0.94%, #0029FF), color-stop(77.24%, rgba(0, 41, 255, 0)));
   background: linear-gradient(90deg, #0029FF -0.94%, rgba(0, 41, 255, 0) 77.24%);
