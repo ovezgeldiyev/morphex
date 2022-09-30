@@ -26,13 +26,24 @@
         padding: 0 30px;
     }
     @include intro-lg-xlg;
+    @include nav-lg-xlg;
+    @include header-lg-xlg;
+
+
 }
 // 930px
 @include md-lg {
     @include intro-md-lg;
+    @include nav-md-lg;
+    @include header-md-lg;
+
+
 }
 // 750px
 @include sm-md {
+    .auto__container {
+        padding: 0 20px;
+    }
     @include intro-sm-md;
 }
 // 650px
@@ -42,9 +53,18 @@
 // 540px
 @include xsm-sm  {
     @include intro-xsm-sm;
+    @include header-xsm-sm;
+
 }
 // 440px
 @include xxsm-xsm  {
+    .main {
+        &__bg {
+            &.index {
+                display: none
+            }
+        }
+    }
     @include intro-xxsm-xsm;
 }
 // 390px

@@ -76,8 +76,9 @@
       &-user {
         margin-right: 30px;
         box-shadow: -1px 8px 19px rgba(0, 0, 0, 0.05);
-        border-radius: 18.9244px;
+        border-radius: 18px;
         padding-left: 22px;
+
         &-icon{
         }
         .button {
@@ -100,6 +101,25 @@
 // 540px
 @mixin header-xsm-sm {
   .header {
+    &__inner{
+      padding: 15px 0;
+      &-user {
+        margin-right: 15px;
+        &-icon{
+          width: 19px;
+          height: 19px;
+        }
+        .button {
+          &.user {
+            span {
+              margin: unset;
+              width: 21px;
+              height: 21px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @keyframes sticky {
