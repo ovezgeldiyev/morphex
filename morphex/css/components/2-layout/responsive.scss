@@ -33,6 +33,9 @@
 }
 // 930px
 @include md-lg {
+    .main{
+        padding: 90px 0;
+    }
     @include intro-md-lg;
     @include nav-md-lg;
     @include header-md-lg;
@@ -52,8 +55,13 @@
 }
 // 540px
 @include xsm-sm  {
+    .main{
+        padding: 80px 0 90px ;
+    }
     @include intro-xsm-sm;
     @include header-xsm-sm;
+    @include nav-xsm-sm;
+
 
 }
 // 440px

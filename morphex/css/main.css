@@ -945,10 +945,10 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding-left: 16px;
-  -webkit-box-shadow: -1px 8px 19px 0px #0000000D;
-          box-shadow: -1px 8px 19px 0px #0000000D;
+  -webkit-box-shadow: -1px 8px 19px 0px #0000000d;
+          box-shadow: -1px 8px 19px 0px #0000000d;
   border-radius: 14px;
 }
 .nav__inner-user-icon {
@@ -1429,6 +1429,9 @@ h6 {
      object-fit: cover;
   border-radius: 12px;
 }
+.info__inner-list {
+  overflow: auto;
+}
 .infoItem {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1526,6 +1529,9 @@ h6 {
   padding: 33px 35px;
   background-color: #fff;
   border-radius: 16px;
+}
+.borrow__inner-list {
+  overflow: auto;
 }
 .borrowItem {
   display: -webkit-box;
@@ -1994,6 +2000,10 @@ h6 {
   }
 }
 @media (max-width: 930px) {
+  .main {
+    padding: 90px 0;
+  }
+
   .intro {
     padding: 20px 0;
   }
@@ -2029,6 +2039,9 @@ h6 {
     -webkit-transform: translate(100%, -50%);
             transform: translate(100%, -50%);
     z-index: 10;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
   }
   .nav__inner {
     position: absolute;
@@ -2036,7 +2049,7 @@ h6 {
     top: 0;
     height: 100%;
     padding: 30px 65px 30px 50px;
-    background: #FFFFFE;
+    background: #fffffe;
     -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.02);
             box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.02);
     border-radius: 82px 0px 0px 82px;
@@ -2077,6 +2090,10 @@ h6 {
             box-shadow: -1px 8px 19px rgba(0, 0, 0, 0.05);
     border-radius: 18px;
     padding-left: 22px;
+    width: 134px;
+  }
+  .header__inner-user .button {
+    margin: 0 0 0 auto;
   }
   .header__inner-user .button.user {
     border-radius: 50%;
@@ -2087,6 +2104,9 @@ h6 {
   }
   .header__inner-user .button.user p {
     display: none;
+  }
+  .header__inner-user .pop {
+    top: calc(100% - 13px);
   }
 }
 @media (max-width: 750px) {
@@ -2134,6 +2154,10 @@ h6 {
   }
 }
 @media (max-width: 540px) {
+  .main {
+    padding: 80px 0 90px;
+  }
+
   .intro__inner-row-wrapper {
     padding: 22px 15px;
   }
@@ -2175,6 +2199,22 @@ h6 {
     margin: unset;
     width: 21px;
     height: 21px;
+  }
+
+  .burger {
+    width: 26px;
+  }
+  .burger span {
+    width: 6px;
+    height: 6px;
+  }
+  .burger::before {
+    width: 6px;
+    height: 6px;
+  }
+  .burger::after {
+    width: 6px;
+    height: 6px;
   }
 }
 @media (max-width: 440px) {

@@ -410,6 +410,9 @@
                 }
             }
         }
+        &-list{
+            overflow: auto;
+        }
     }
     &Item {
         display: flex;
@@ -496,6 +499,9 @@
                 background-color: $white;
                 border-radius: 16px;
             }
+        }
+        &-list{
+            overflow: auto;
         }
     }
     &Item {
