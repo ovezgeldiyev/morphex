@@ -629,12 +629,13 @@ table {
         }
       }
       .bar {
-        width: calc(80% - 68px);
+        width: calc(100% - 68px);
         display: inline-block;
         height: 6px;
         background-color: $gray-5;
         border-radius: 3px;
         margin-left: 11px;
+        max-width: 113px;
       }
     }
     tbody {
