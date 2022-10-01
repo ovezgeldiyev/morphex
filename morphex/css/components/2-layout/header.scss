@@ -26,7 +26,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 320px;
+      width: 50px;
+      position: absolute;
+      top: 50%;
+      left: 45px;
+      transform: translateY(-50%);
       img {
         width: 100%;
       }
@@ -61,6 +65,9 @@
   .header {
     &__inner {
       padding: 8px 20px;
+      &-logo {
+        left: 30px;
+      }
     }
   }
 }
@@ -73,6 +80,10 @@
       background-color: unset;
       box-shadow: unset;
       padding: 25px 0;
+      &-logo {
+        left: 0;
+        width: 43px;
+      }
       &-user {
         margin-right: 30px;
         box-shadow: -1px 8px 19px rgba(0, 0, 0, 0.05);
