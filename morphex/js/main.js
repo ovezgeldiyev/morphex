@@ -11,7 +11,7 @@ menuBtn.onclick = function () {
   menu.classList.toggle("active");
   menuBtn.classList.toggle("active");
   body.classList.toggle("active");
-  popup.classList.remove("active");
+  // popup.classList.remove("active");
   popupOuter.classList.remove("active");
 };
 window.onclick = function (event) {
@@ -35,4 +35,3 @@ checkbox.onclick = function () {
   progress.classList.toggle("active");
 };
 // menu end
-

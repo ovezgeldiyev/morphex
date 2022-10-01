@@ -44,6 +44,7 @@
         right: 0;
     }
     @include intro-md-lg;
+    @include info-md-lg;
     @include nav-md-lg;
     @include header-md-lg;
 
@@ -89,6 +90,11 @@
             &.home {
                 display: none
             }
+        }
+    }
+    .header {
+        &.index {
+            display: none;
         }
     }
     .popup{
