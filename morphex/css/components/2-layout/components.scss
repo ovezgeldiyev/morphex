@@ -61,7 +61,7 @@ h4 {
       font-size: 10px;
       line-height: 12px;
       color: #CCCCCC;
-      margin-left: 6px;
+      margin: 3px 0 0 6px;
   }
 }
 h5 {
@@ -101,7 +101,7 @@ p {
       padding-bottom: 0;
     }
     &__bg {
-        max-width: 1900px;
+        // max-width: 1920px;
         position: absolute;
         z-index: -1;
         margin: 0 auto;
@@ -197,7 +197,7 @@ p {
             transform: translateY(-30%);
             &.center {
               left: 50%;
-              transform: translate(-50%, -50%) rotate(-90deg);
+              transform: translate(-50%, -66%) rotate(-90deg);
               width: 75%;
             }
             &.right {
@@ -271,7 +271,7 @@ p {
     border-radius: 16px;
     padding: 25px 36px 25px 23px;
     width: 350px;
-    z-index: 9;
+    z-index: 15;
     &.active {
       display: flex;
       animation-name: fadeInUp;
@@ -285,7 +285,7 @@ p {
       width: 100%;
       height: 100%;
       overflow: hidden;
-      z-index: 7;
+      z-index: 14;
       &.active {
         display: block;
       }

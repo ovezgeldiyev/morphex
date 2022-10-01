@@ -16,7 +16,6 @@
     @include intro-xlg-xxlg;
     @include info-xlg-xxlg;
     @include borrow-xlg-xxlg;
-
 }
 // 1024px
 @include lg-xlg {
@@ -33,6 +32,7 @@
     @include header-lg-xlg;
     @include intro-lg-xlg;
     @include borrow-lg-xlg;
+    @include about-lg-xlg;
 }
 // 930px
 @include md-lg {
@@ -61,7 +61,6 @@
                         transform: translate(18px, -50%);
                     }
                 }
-          
             }
         }
     }
@@ -70,11 +69,23 @@
     @include intro-md-lg;
     @include info-md-lg;
     @include borrow-md-lg;
+    @include about-md-lg;
 }
 // 750px
 @include sm-md {
     .auto__container {
         padding: 0 20px;
+    }
+    .main {
+        &__bg {
+            display: none;
+            &.index {
+                display: none
+            }
+            &.home {
+                display: none
+            }
+        }
     }
     .check {
         width: 25px;
@@ -101,12 +112,15 @@
     @include intro-sm-md;
     @include info-sm-md;
     @include borrow-sm-md;
+    @include about-sm-md;
+
 }
 // 650px
 @include sm-md-extra {
     @include intro-sm-md-extra;
     @include info-sm-md-extra;
     @include borrow-sm-md-extra;
+    @include about-sm-md-extra;
 
 }
 // 540px
@@ -129,19 +143,12 @@
     @include intro-xsm-sm;
     @include info-xsm-sm;
     @include borrow-xsm-sm;
+    @include about-xsm-sm;
+    @include list-xsm-sm;
+
 }
 // 440px
 @include xxsm-xsm  {
-    .main {
-        &__bg {
-            &.index {
-                display: none
-            }
-            &.home {
-                display: none
-            }
-        }
-    }
     .header {
         &.index {
             display: none;

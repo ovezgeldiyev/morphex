@@ -7,27 +7,23 @@
       justify-content: space-between;
       margin-bottom: 12px;
       .button {
+        font-size: 10px;
+        line-height: 12px;
+        padding: 8px 26px;
+        border-radius: 11px;
         &.uniq {
-          font-size: 10px;
-          line-height: 11px;
-          padding: 8.5px 32.5px;
-          border-radius: 11px;
-          background-color: #F7F7F7;
-          &:last-child {
-            padding: 8.5px 27px;
-          }
-        }
-        &.active {
-          background-color: $main;
-          color: $white;
+          background-color: #F6F6F6;
+          color: $primary;
         }
       }
       &-wrapper {
         display: flex;
+        align-items: center;
         .button {
           margin-right: 10px;
+          padding: 8px 32px;
           &:last-child {
-            margin-right: unset;
+            margin-right: 0;
           }
         }
       }
@@ -41,6 +37,25 @@
     }
     &.gauges {
       padding: unset;
+    }
+  }
+}
+// 540px
+@mixin list-xsm-sm {
+  .list {
+    &__inner {
+      &-buttons {
+        .button {
+          padding: 8px 16px;
+          border-radius: 8px;
+        }
+        &-wrapper {
+          .button {
+            margin-right: 7px;
+            padding: 8px 18px;
+          }
+        }
+      }
     }
   }
 }
