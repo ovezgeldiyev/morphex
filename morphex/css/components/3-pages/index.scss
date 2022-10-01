@@ -982,6 +982,7 @@
 // 540px
 @mixin borrow-xsm-sm {
     .borrow {
+        padding: 20px 0 0;
         &__inner {
             &-row {
                 flex-wrap: wrap;
