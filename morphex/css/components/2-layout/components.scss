@@ -33,7 +33,7 @@ h3 {
         align-items: center;
         width: 23px;
         height: 23px;
-        margin-right: 13px;
+        margin-right: 12px;
         img {
             width: 100%;
         }
@@ -414,12 +414,15 @@ p {
       position: absolute;
       top: calc(100% + 10px);
       left: 75%;
+      transform: translateX(-75%);
       &:first-of-type {
           left: 0;
+          transform: unset;
       }
       &:last-of-type {
           left: unset;
           right: 0;
+          transform: unset;
       }
     }
   }

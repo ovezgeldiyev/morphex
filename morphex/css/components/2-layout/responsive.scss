@@ -12,9 +12,10 @@
 }
 // 1180px
 @include xlg-xxlg {
+    @include nav-xlg-xxlg;
     @include intro-xlg-xxlg;
     @include info-xlg-xxlg;
-    @include nav-xlg-xxlg;
+    @include borrow-xlg-xxlg;
 
 }
 // 1024px
@@ -28,11 +29,10 @@
     .popup{
         right: 20px
     }
-    @include intro-lg-xlg;
     @include nav-lg-xlg;
     @include header-lg-xlg;
-
-
+    @include intro-lg-xlg;
+    @include borrow-lg-xlg;
 }
 // 930px
 @include md-lg {
@@ -43,26 +43,70 @@
         top: calc(100% - 13px);
         right: 0;
     }
-    @include intro-md-lg;
-    @include info-md-lg;
+    .check {
+        width: 34px;
+        height: 16px;
+        margin-right: 9px;
+        &__box {
+            &::before {
+                width: 12px;
+                height: 12px;
+                left: 2px;
+            }
+        }
+        input {
+            &:checked {
+                & ~ .check__box {
+                    &::before {
+                        transform: translate(18px, -50%);
+                    }
+                }
+          
+            }
+        }
+    }
     @include nav-md-lg;
     @include header-md-lg;
-
-
+    @include intro-md-lg;
+    @include info-md-lg;
+    @include borrow-md-lg;
 }
 // 750px
 @include sm-md {
     .auto__container {
         padding: 0 20px;
     }
+    .check {
+        width: 25px;
+        height: 12px;
+        margin-right: 5px;
+        &__box {
+            &::before {
+                width: 10px;
+                height: 10px;
+                left: 2px;
+            }
+        }
+        input {
+            &:checked {
+                & ~ .check__box {
+                    &::before {
+                        transform: translate(12px, -50%);
+                    }
+                }
+          
+            }
+        }
+    }
     @include intro-sm-md;
     @include info-sm-md;
-
+    @include borrow-sm-md;
 }
 // 650px
 @include sm-md-extra {
     @include intro-sm-md-extra;
     @include info-sm-md-extra;
+    @include borrow-sm-md-extra;
 
 }
 // 540px
@@ -73,12 +117,18 @@
     .popup{
         top: 100%;
     }
-    @include intro-xsm-sm;
-    @include info-xsm-sm;
+    .progress {
+        &__outer {
+            p {
+                color: #D9D9D9;
+            }
+        }
+    }
     @include header-xsm-sm;
     @include nav-xsm-sm;
-
-
+    @include intro-xsm-sm;
+    @include info-xsm-sm;
+    @include borrow-xsm-sm;
 }
 // 440px
 @include xxsm-xsm  {
@@ -101,8 +151,31 @@
         padding: 20px;
         width: 320px;
     }
+    .check {
+        width: 28px;
+        height: 16px;
+        margin-right: 11px;
+        &__box {
+            &::before {
+                width: 12px;
+                height: 12px;
+                left: 2px;
+            }
+        }
+        input {
+            &:checked {
+                & ~ .check__box {
+                    &::before {
+                        transform: translate(12px, -50%);
+                    }
+                }
+          
+            }
+        }
+    }
     @include intro-xxsm-xsm;
     @include info-xxsm-xsm;
+    @include borrow-xxsm-xsm;
 
 }
 // 390px
