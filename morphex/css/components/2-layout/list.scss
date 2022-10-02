@@ -46,13 +46,18 @@
     &__inner {
       &-buttons {
         .button {
-          padding: 8px 16px;
-          border-radius: 8px;
+          padding: 8px 17px;
+          border-radius: 11px;
+          &.uniq {
+            padding: 8px 20px;
+          }
         }
         &-wrapper {
           .button {
-            margin-right: 7px;
-            padding: 8px 18px;
+            margin-right: 5px;
+            &.uniq {
+              padding: 8px 20px;
+            }
           }
         }
       }

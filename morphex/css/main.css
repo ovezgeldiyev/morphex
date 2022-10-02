@@ -2888,12 +2888,17 @@ table.sm tbody tr.bg:after {
   }
 
   .list__inner-buttons .button {
-    padding: 8px 16px;
-    border-radius: 8px;
+    padding: 8px 17px;
+    border-radius: 11px;
+  }
+  .list__inner-buttons .button.uniq {
+    padding: 8px 20px;
   }
   .list__inner-buttons-wrapper .button {
-    margin-right: 7px;
-    padding: 8px 18px;
+    margin-right: 5px;
+  }
+  .list__inner-buttons-wrapper .button.uniq {
+    padding: 8px 20px;
   }
 }
 @media (max-width: 440px) {
