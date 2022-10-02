@@ -1,7 +1,3 @@
-// 1450px
-@include xxxxlg-xxxxxlg {
-    // @include hero-xxxxlg-xxxxxlg;
-}
 // 1380px
 @include xxxlg-xxxxlg {
     @include intro-xxxlg-xxxxlg;
@@ -80,10 +76,7 @@
         &__bg {
             display: none;
             &.index {
-                display: none
-            }
-            &.home {
-                display: none
+                display: block;
             }
         }
     }
@@ -138,6 +131,7 @@
             }
         }
     }
+
     @include header-xsm-sm;
     @include nav-xsm-sm;
     @include intro-xsm-sm;
@@ -145,10 +139,16 @@
     @include borrow-xsm-sm;
     @include about-xsm-sm;
     @include list-xsm-sm;
-
 }
 // 440px
 @include xxsm-xsm  {
+    .main {
+        &__bg {
+            &.index {
+                display: none;
+            }
+        }
+    }
     .header {
         &.index {
             display: none;
@@ -183,7 +183,6 @@
     @include intro-xxsm-xsm;
     @include info-xxsm-xsm;
     @include borrow-xxsm-xsm;
-
 }
 // 390px
 @include xxxsm-xxsm  {
