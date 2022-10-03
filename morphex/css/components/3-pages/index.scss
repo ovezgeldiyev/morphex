@@ -257,6 +257,7 @@
 // 540px
 @mixin intro-xsm-sm {
     .intro {
+        min-height: calc(100vh - 160px);
         &__inner {
             &-row {
                 &-wrapper {
@@ -1293,6 +1294,10 @@
         padding: 8px 12px;
         border-radius: 7px;
         margin: 9px 0;
+        color: $gray-2;
+        &.dark {
+            color: $black-2;
+        }
     }
     &__footer {
         display: flex;
@@ -1617,9 +1622,20 @@
             padding: 10px 12px;
             &__row {
                 & > p {
-                    padding: 5px 13px 5px 10px;
-                    border-radius: 7px;
-                    border: 0.5px solid #ECECEC;
+                    &:last-child {
+                        display: none;
+                    }
+                }
+            }
+            &.uniq {
+                .aboutItem__row {
+                    & > p {
+                        &:first-child {
+                            padding: 5px 13px 5px 10px;
+                            border-radius: 7px;
+                            border: 0.5px solid #ECECEC;
+                        }      
+                    }
                 }
             }
             & > p  {
@@ -1632,7 +1648,11 @@
         }
         &Info {
             padding: 10px 24px;
-            color: $gray-2;
+
+            &.dark {
+                padding: 7px 12px;
+
+            }
         }   
     }
 }

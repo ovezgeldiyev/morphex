@@ -7,6 +7,9 @@ var popupBtn = document.getElementById("popupBtn");
 var popupOuter = document.getElementById("popupOuter");
 var checkbox = document.getElementById("checkbox");
 var progress = document.getElementById("progress");
+var lock = document.getElementById("lock");
+var lockInner = document.getElementById("lockInner");
+var lockBtn = document.getElementById("lockBtn");
 menuBtn.onclick = function () {
   menu.classList.toggle("active");
   menuBtn.classList.toggle("active");
@@ -25,13 +28,29 @@ window.onclick = function (event) {
     popupOuter.classList.remove("active");
     body.classList.remove("active");
   }
+  if (event.target == lock) {
+    lock.classList.remove("active");
+    lockInner.classList.remove("active");
+    body.classList.remove("active");
+  }
 };
 popupBtn.onclick = function () {
   popup.classList.toggle("active");
   popupOuter.classList.toggle("active");
   body.classList.toggle("active");
 };
+lockBtn.onclick = function () {
+  lock.classList.toggle("active");
+  lockInner.classList.toggle("active");
+  body.classList.toggle("active");
+};
 checkbox.onclick = function () {
   progress.classList.toggle("active");
 };
 // menu end
+new Litepicker({
+  element: document.getElementById('datepicker'),
+  singleMode: true,
+  position: "left",
+  format: 'DD/MM/YYYY'
+})
