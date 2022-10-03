@@ -44,12 +44,7 @@ checkbox.onclick = function () {
 };
 
 // menu end
-new Litepicker({
-  element: document.getElementById('datepicker'),
-  singleMode: true,
-  position: "left",
-  format: 'DD/MM/YYYY'
-})
+
 lockBtn.onclick = function () {
   lock.classList.toggle("active");
   lockInner.classList.toggle("active");

@@ -479,6 +479,7 @@
             width: 100%;
             padding: 0;
             background: unset;
+            margin-bottom: 0;
         }
       }
       p {
@@ -604,6 +605,20 @@
   @include about-xsm-sm;
   @include list-xsm-sm;
 }
+@include xsm-sm-h {
+  .nav {
+    &__inner {
+      &-links {
+        a {
+          margin-bottom: 30px;
+        }
+      }
+      &-social {
+        bottom: 30px;
+      }
+    }
+  }
+}
 // 440px
 @include xxsm-xsm {
   .main {
@@ -651,10 +666,19 @@
 // 390px
 @include xxxsm-xxsm {
   @include staking-xxxsm-xxsm;
-  @include intro-xxxsm-xxsm;
 }
 // 380px
 @include sm {
+  .lock {
+    &__inner {
+      &-row {
+        a {
+          margin-right: 4px;
+          padding: 3px 6px;
+        }
+      }
+    }
+  }
   table {
     tbody {
       tr {
@@ -779,4 +803,6 @@
     }
   }
   @include list-sm;
+  @include intro-xxxsm-xxsm;
+
 }

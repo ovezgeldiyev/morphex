@@ -88,6 +88,11 @@
     @content;
   }
 }
+@mixin xsm-sm-h {
+  @media (max-height: 540px) {
+    @content;
+  }
+}
 @mixin xsm-sm {
   @media (max-width: 540px) {
     @content;
