@@ -39,14 +39,10 @@ popupBtn.onclick = function () {
   popupOuter.classList.toggle("active");
   body.classList.toggle("active");
 };
-lockBtn.onclick = function () {
-  lock.classList.toggle("active");
-  lockInner.classList.toggle("active");
-  body.classList.toggle("active");
-};
 checkbox.onclick = function () {
   progress.classList.toggle("active");
 };
+
 // menu end
 new Litepicker({
   element: document.getElementById('datepicker'),
@@ -54,3 +50,8 @@ new Litepicker({
   position: "left",
   format: 'DD/MM/YYYY'
 })
+lockBtn.onclick = function () {
+  lock.classList.toggle("active");
+  lockInner.classList.toggle("active");
+  body.classList.toggle("active");
+};
