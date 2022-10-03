@@ -1151,7 +1151,7 @@
                 }
                 h4 {
                     display: flex;
-                    align-items: flex-end;
+                    align-items: center;
                     flex-wrap: wrap;
                 }
                 .button {
@@ -1417,7 +1417,6 @@
                     .button {
                         font-size: 8px;
                         line-height: 10px;
-                        border-radius: 7px;
                     }
                 }
             }
@@ -1532,24 +1531,69 @@
             &-col {
                 width: 100%;
                 max-width: unset;
-                margin-bottom: 15px;
+                margin-bottom: 13px;
+                padding: 25px 20px 28px;
                 &:last-child {
                     margin-bottom: 0;
+                }
+                &-top {
+                    margin-bottom: 26px;
+
+                    &-buttons {
+                        width: calc(100% - 100px);
+                    }
+                    &.big {
+                        margin-bottom: 22px;
+
+                        h4 {
+                            font-size: 15px;
+                            line-height: 18px;
+                            small {
+                                font-size: 10px;
+                                line-height: 12px;
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+                    .button {
+                        padding: 7px 20px;
+                        font-size: 10px;
+                        line-height: 12px;
+                    }
+                }
+                &-center {
+                    & > p {
+                        margin-bottom: 35px;
+                    }
+                }
+                &-bottom {
+                    .aboutInfo {
+                        margin: 9px 0;
+                    }
+                }
+                h4 {
+                    font-size: 13px;
+                    line-height: 16px;
                 }
             }
         }
         &__footer {
             flex-direction: column;
-            padding: 16px 14px;
+            padding: 17px 24px 25px;
             &-col {
                 width: 100%;
                 max-width: unset;
-                margin-bottom: 15px;
+                margin-bottom: 20px;
                 &:last-child {
                     margin-bottom: 0;
                 }
                 &-top {
                     height: unset;
+                    margin-bottom: 16px;
+                    padding: 0 20px;
+                    &.big {
+                        padding: 0;
+                    }
                     h4 {
                         flex-direction: row;
                         justify-content: space-between;
@@ -1559,12 +1603,67 @@
                     }
                 }
             }
+            &-row {
+                padding: 10px 20px;
+                &.linear {
+                    margin-bottom: 13px;
+                    .about__footer-row-item {
+                        padding: 10px 20px;
+                    }
+                }
+            }
         }
+        &Item {
+            padding: 10px 12px;
+            &__row {
+                & > p {
+                    padding: 5px 13px 5px 10px;
+                    border-radius: 7px;
+                    border: 0.5px solid #ECECEC;
+                }
+            }
+            & > p  {
+                margin-bottom: 9px;
+            }
+            .aboutInfo {
+                margin-top: 9px;
+                padding: 8px 12px;
+            }
+        }
+        &Info {
+            padding: 10px 24px;
+            color: $gray-2;
+        }   
     }
 }
 // 440px
 @mixin about-xxsm-xsm {
     .about {
-    
+        &__inner {
+            &-col {
+                &-top {
+                    flex-direction: column;
+                    &.big {
+                        flex-direction: row;
+                    }
+                    &-buttons {
+                        width: 100%;
+                        justify-content: flex-start;
+                        .button {
+                            max-width: 74px;
+                            &:first-child {
+                                max-width: 156px;
+                            }
+                        }
+                    }
+                    h4 {
+                        margin-bottom: 14px;
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
