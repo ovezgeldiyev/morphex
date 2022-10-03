@@ -325,28 +325,39 @@
     }
   }
   table {
-    th {
-      padding: 11px 20px;
-      font-size: 13px;
-      line-height: 15px;
-      &:first-child {
-        padding-left: 25px;
-      }
+    border-spacing: 0;
+    thead {
+      display: none;
     }
     td {
-      padding: 11px 20px;
-      font-size: 12px;
-      line-height: 14px;
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 15px;
       p {
-        font-size: 12px;
-        line-height: 14px;
+        display: block;
+      }
+      span {
         small {
-          font-size: 12px;
-          line-height: 14px;
+          margin-left: 5px;
         }
       }
-      &:first-child {
-        padding-left: 25px;
+      &.head {
+        filter: drop-shadow(-1px 8px 19px rgba(0, 0, 0, 0.05));
+        border-radius: 13px;
+        border: 0.5px solid $violet;
+        padding: 19px 15px;
+        margin-bottom: 14px;
+      }
+    }
+    tbody {
+      tr {
+        display: flex;
+        flex-direction: column;
+        box-shadow: -1px 8px 19px rgba(111, 111, 111, 0.04);
+        border-radius: 16px;
+        background-color: $white;
+        padding: 17px 16px 28px;
+        margin-bottom: 27px;
       }
     }
     &.big {
@@ -459,11 +470,10 @@
         }
       }
     }
-    &.fade {
-      &::after {
-        display: none;
-      }
+    &.long{
+      padding-bottom: 20px;
     }
+    
     &.sm {
       display: flex;
       thead {
@@ -559,44 +569,7 @@
       }
     }
   }
-  table {
-    border-spacing: 0;
-    thead {
-      display: none;
-    }
-    tbody {
-      tr {
-        display: flex;
-        flex-direction: column;
-        box-shadow: -1px 8px 19px rgba(111, 111, 111, 0.04);
-        border-radius: 16px;
-        background-color: $white;
-        padding: 17px 16px 28px;
-        margin-bottom: 27px;
-      }
-    }
-    td {
-      display: flex;
-      justify-content: space-between;
-      padding: 6px 15px;
-      p {
-        display: block;
-      }
-      span {
-        small {
-          margin-left: 5px;
-        }
-      }
-      &.head {
-        filter: drop-shadow(-1px 8px 19px rgba(0, 0, 0, 0.05));
-        border-radius: 13px;
-        border: 0.5px solid $violet;
-        padding: 19px 15px;
-        margin-bottom: 14px;
-      }
-    }
-  }
-
+ 
   @include header-xsm-sm;
   @include nav-xsm-sm;
   @include intro-xsm-sm;

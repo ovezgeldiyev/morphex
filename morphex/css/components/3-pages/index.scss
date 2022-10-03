@@ -771,8 +771,6 @@
             overflow: auto;
         }
         h3 {
-            flex-wrap: wrap;
-            justify-content: flex-end;
             small {
                 display: none;
                 width: 100%;
@@ -1064,6 +1062,8 @@
             h3 {
                 font-size: 13px;
                 line-height: 16px;
+                flex-wrap: wrap;
+                justify-content: flex-end;
                 span {
                     width: 19px;
                     height: 19px;
