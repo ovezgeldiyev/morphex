@@ -4,16 +4,7 @@
 }
 // 1250px
 @include xlg-xxlg-extra {
-<<<<<<< HEAD
   @include intro-xlg-xxlg-extra;
-=======
-    @include intro-xlg-xxlg-extra;
-    .lock {
-        &__inner {
-            margin: 50px auto 90px;
-        }
-    }
->>>>>>> aa389354a73c572e3e611c62b30a044c3cd2d2d2
 }
 // 1180px
 @include xlg-xxlg {
@@ -582,25 +573,15 @@
         margin-bottom: 14px;
       }
     }
-    .lock {
-        &__inner {
-            margin: 30px auto 90px;
-            width: calc(100% - 40px);
-            max-width: 342px;
-            padding: 20px 16px;
-            h4 {
-                margin-bottom: 12px
-            }
-        }
-    }
-  
-    @include header-xsm-sm;
-    @include nav-xsm-sm;
-    @include intro-xsm-sm;
-    @include info-xsm-sm;
-    @include borrow-xsm-sm;
-    @include about-xsm-sm;
-    @include list-xsm-sm;
+  }
+
+  @include header-xsm-sm;
+  @include nav-xsm-sm;
+  @include intro-xsm-sm;
+  @include info-xsm-sm;
+  @include borrow-xsm-sm;
+  @include about-xsm-sm;
+  @include list-xsm-sm;
 }
 // 440px
 @include xxsm-xsm {

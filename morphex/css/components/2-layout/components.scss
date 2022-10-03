@@ -321,110 +321,87 @@ p {
     border-radius: 7px;
   }
 }
-.input {
-  border-radius: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+input {
+  width: calc(100% - 50px);
   background-color: $light-gray;
-  padding: 10px 13px;
-  margin-bottom: 10px;
-  &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 14px;
-    height: 14px;
-    margin-right: 5px;
-    cursor: pointer;
-    &:last-child {
-      margin-right: 0;
-    }
-    img {
-      width: 100%;
-    }
-  }
-  input {
-    width: calc(100% - 50px);
+  border-radius: 7px;
+  font-family: $rubik;
+  font-size: 13px;
+  line-height: 16px;
+  color: $white;
+  &.uniq {
+    border-radius: 14px;
+    padding: 13px 20px;
     background-color: $light-gray;
-    border-radius: 7px;
-    font-family: $rubik;
-    font-size: 13px;
-    line-height: 16px;
-    color: $white;
-    &.uniq {
-        border-radius: 14px;
-        padding: 13px 20px;
-        background-color: $light-gray;
-        color: $black-2;
-        font-size: 15px;
-        line-height: 18px;
-        box-shadow: -1px 8px 19px 0px #0000000D;
-    }
-    &.user {
-        padding: 7px 18px;
-        background-color: $white;
-        span {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 10px;
-            width: 23px;
-            height: 23px;
-            img {
-                width: 100%;
-            }
-        }
-        p {
-            color: #B5B5B5;
-        }
-    }
-}
-.popup {
-    position: absolute;
-    top: calc(100% + 13px);
-    right: 30px;
+    color: $black-2;
+    font-size: 15px;
+    line-height: 18px;
+    box-shadow: -1px 8px 19px 0px #0000000d;
+  }
+  &.user {
+    padding: 7px 18px;
     background-color: $white;
-    box-shadow: -1px 8px 19px 0px #6565650D;
-    display: none;
-    flex-direction: column;
-    border-radius: 16px;
-    padding: 25px 36px 25px 23px;
-    width: 350px;
-    z-index: 10;
-    &.active {
+    span {
       display: flex;
-      animation-name: fadeInUp;
-      animation-duration: .4s;
-    }
-    &__outer {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      z-index: 9;
-      &.active {
-        display: block;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      width: 23px;
+      height: 23px;
+      img {
+        width: 100%;
       }
     }
-    &__row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 23px;
+    p {
+      color: #b5b5b5;
     }
-    & > h4{
-        margin-bottom: 20px;
+  }
+}
+.popup {
+  position: absolute;
+  top: calc(100% + 13px);
+  right: 30px;
+  background-color: $white;
+  box-shadow: -1px 8px 19px 0px #6565650d;
+  display: none;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 25px 36px 25px 23px;
+  width: 350px;
+  z-index: 10;
+  &.active {
+    display: flex;
+    animation-name: fadeInUp;
+    animation-duration: 0.4s;
+  }
+  &__outer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 9;
+    &.active {
+      display: block;
     }
-    .button {
-        border: 0.5px solid #ECECEC;
-        background-color: transparent;
-        color: $gray-3;
-        border-radius: 7px;
-    }
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 23px;
+  }
+  & > h4 {
+    margin-bottom: 20px;
+  }
+  .button {
+    border: 0.5px solid #ececec;
+    background-color: transparent;
+    color: $gray-3;
+    border-radius: 7px;
+  }
 }
 .lock {
   display: none;
@@ -433,7 +410,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba($black, .2);
+  background-color: rgba($black, 0.2);
   z-index: 10;
   overflow-y: auto;
   &.active {
@@ -445,13 +422,13 @@ p {
     width: 100%;
     max-width: 450px;
     background-color: $white;
-    box-shadow: -1px 8px 19px 0px #6F6F6F0A;
+    box-shadow: -1px 8px 19px 0px #6f6f6f0a;
     border-radius: 12px;
     padding: 20px 36px;
     &.active {
       display: block;
       animation-name: fadeInUpSmall;
-      animation-duration: .6s;
+      animation-duration: 0.6s;
     }
     &-row {
       display: flex;
@@ -461,7 +438,7 @@ p {
         font-size: 10px;
         line-height: 12px;
         padding: 4px 9px;
-        background-color: #FBFBFB;
+        background-color: #fbfbfb;
         border-radius: 4px;
         margin-right: 6px;
         color: $gray-2;
@@ -498,7 +475,7 @@ p {
   &Item {
     padding: 14px 12px;
     border-radius: 7px;
-    border: 0.5px solid #ECECEC;
+    border: 0.5px solid #ececec;
     margin-bottom: 8px;
     &.sm {
       padding: 15px 22px;
@@ -531,7 +508,7 @@ p {
         &:first-child {
           padding: 5px 14px 5px 10px;
           border-radius: 7px;
-          border: 0.5px solid #ECECEC;
+          border: 0.5px solid #ececec;
         }
         span {
           display: flex;
@@ -551,44 +528,11 @@ p {
       justify-content: space-between;
       align-items: center;
       padding: 7px 12px;
-      background-color: #F9F9F9;
+      background-color: #f9f9f9;
       border-radius: 7px;
       color: $gray-2;
     }
   }
-}
-.input{ 
-    border-radius: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: $light-gray;
-    padding: 10px 13px;
-    margin-bottom: 10px;
-    &__button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 14px;
-        height: 14px;
-        margin-right: 5px;
-        cursor: pointer;
-        &:last-child {
-            margin-right: 0;
-        }
-        img {
-            width: 100%;
-        }
-    }
-    input {
-        width: calc(100% - 50px);
-        background-color: $light-gray;
-        border-radius: 7px;
-        font-family: $rubik;
-        font-size: 13px;
-        line-height: 16px;
-        color: $gray-3;
-    }
 }
 .check {
   margin-right: 15px;
@@ -805,18 +749,17 @@ table {
           }
         }
       }
-      &.space{
-        th{
+      &.space {
+        th {
           padding: unset;
         }
-        tr{
+        tr {
           background-color: unset;
-          &:after{
+          &:after {
             display: none;
           }
         }
       }
-     
     }
     th {
       &:first-child {
@@ -863,15 +806,15 @@ table {
       padding: 13px 20px;
       font-size: 15px;
       line-height: 17px;
-      &:nth-child(4){
-        span{
+      &:nth-child(4) {
+        span {
           margin: unset;
           font-size: 15px;
-          line-height:17px;
-          small{
+          line-height: 17px;
+          small {
             margin-left: 12px;
             font-size: 15px;
-            line-height:17px;
+            line-height: 17px;
           }
         }
       }
@@ -896,7 +839,7 @@ table {
         margin-left: 11px;
         max-width: 113px;
       }
-      p{
+      p {
         svg {
           display: inline-block;
           width: 13px;
