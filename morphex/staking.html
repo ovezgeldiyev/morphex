@@ -17,239 +17,199 @@
 <body>
   <!-- header start
     =========================================== -->
-    <header class="header" id="header">
-      <div class="auto__container">
-        <div class="header__inner">
-          <a href="home.html" class="header__inner-logo">
-            <img src="./images/logo.svg" alt="">
-          </a>
-          <nav class="nav" id="menu">
-            <div class="nav__inner">
-              <div class="nav__inner-links">
-                <a href="home.html" >
-                  Home
-                </a>
-                <a href="liquidations.html">
-                  Liquidations
-                </a>
-                <a href="borrow.html" >
-                  Borrow
-                </a>
-                <a href="staking.html" class="active">
-                  Staking
-                </a>
-                <a href="gauges.html">
-                  Gauges
-                </a>
-                <a href="mlqdr.html">
-                  mLQDR
-                </a>
-                <a href="#">
-                  Voting
-                </a>
-              </div>
-              <div class="nav__inner-social">
-                <a href="#">
-                  <svg>
-                    <use xlink:href="#twitter"></use>
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg>
-                    <use xlink:href="#telegram"></use>
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg>
-                    <use xlink:href="#discord"></use>
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg>
-                    <use xlink:href="#medium"></use>
-                  </svg>
-                </a>
-              </div>
+  <header class="header" id="header">
+    <div class="auto__container">
+      <div class="header__inner">
+        <a href="home.html" class="header__inner-logo">
+          <img src="./images/logo.svg" alt="">
+        </a>
+        <nav class="nav" id="menu">
+          <div class="nav__inner">
+            <div class="nav__inner-links">
+              <a href="home.html">
+                Home
+              </a>
+              <a href="liquidations.html">
+                Liquidations
+              </a>
+              <a href="borrow.html">
+                Borrow
+              </a>
+              <a href="staking.html" class="active">
+                Staking
+              </a>
+              <a href="gauges.html">
+                Gauges
+              </a>
+              <a href="mlqdr.html">
+                mLQDR
+              </a>
+              <a href="#">
+                Voting
+              </a>
             </div>
-          </nav>
-          <div class="header__inner-user">
-            <div class="header__inner-user-icon">
-              <img src="./images/icons/main-icon.png" alt="">
+            <div class="nav__inner-social">
+              <a href="#">
+                <svg>
+                  <use xlink:href="#twitter"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg>
+                  <use xlink:href="#telegram"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg>
+                  <use xlink:href="#discord"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg>
+                  <use xlink:href="#medium"></use>
+                </svg>
+              </a>
             </div>
+          </div>
+        </nav>
+        <div class="header__inner-user">
+          <div class="header__inner-user-icon">
+            <img src="./images/icons/main-icon.png" alt="">
+          </div>
+          <p>
+            $0.00
+          </p>
+          <a href="#" class="button user" id="popupBtn">
+            <span>
+              <img src="./images/icons/avatar.svg" alt="">
+            </span>
             <p>
-              $0.00
+              0xC6c...B77D
             </p>
-            <a href="#" class="button user" id="popupBtn">
+          </a>
+        </div>
+        <div class="popup" id="popUp">
+          <h4>
+            Wallet
+          </h4>
+          <div class="input">
+            <input type="text" placeholder="0xC6c...B77D">
+            <button class="input__button">
+              <img src="./images/icons/copy.svg" alt="">
+            </button>
+            <button class="input__button">
+              <img src="./images/icons/share.svg" alt="">
+            </button>
+          </div>
+          <div class="popup__row">
+            <h5>
               <span>
-                <img src="./images/icons/avatar.svg" alt="">
+                <img src="./images/icons/icon-logo.svg" alt="">
               </span>
-              <p>
-                0xC6c...B77D
-              </p>
-            </a>
+              MRX
+            </h5>
+            <p>
+              0
+            </p>
           </div>
-          <div class="popup" id="popUp">
-            <h4>
-              Wallet
-            </h4>
-            <div class="input">
-              <input type="text" placeholder="0xC6c...B77D">
-              <button class="input__button">
-                <img src="./images/icons/copy.svg" alt="">
-              </button>
-              <button class="input__button">
-                <img src="./images/icons/share.svg" alt="">
-              </button>
-            </div>
-            <div class="popup__row">
-              <h5>
-                <span>
-                  <img src="./images/icons/icon-logo.svg" alt="">
-                </span>
-                MRX
-              </h5>
-              <p>
-                0
-              </p>
-            </div>
-            <a href="#" class="button">
-              Disconnect
-            </a>
-          </div>
-          <div class="burger" id="menuBtn">
-            <span></span>
-          </div>
+          <a href="#" class="button">
+            Disconnect
+          </a>
+        </div>
+        <div class="burger" id="menuBtn">
+          <span></span>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
   <!-- header end
     =========================================== -->
   <main class="main">
-    <!-- table start
+    <!-- staking start
     =========================================== -->
-    <section class="list ">
+    <section class="staking">
       <div class="auto__container">
-        <div class="list__inner staking">
-          <div class="list__inner-main">
-            <table class="extra">
-              <tbody>
-                <td>
-                  <h4>
-                    <span><img src='./images/icons/main-icon.png' alt=""></span>
-                    MPX
-                    <small>
-                      15.32%
-                    </small>
-                  </h4>
-                </td>
-                <td>
-                  MPX Staked
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  Rewards (MPX)
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  <a href="#" class="button">
-                    Stake
-                  </a>
-                </td>
-                <tr>
-                  <td>
-                    <h4>
-                      <span><img src='./images/icons/main-icon.png' alt=""></span>
-                      MPX
-                      <small>
-                        15.32%
-                      </small>
-                    </h4>
-                  </td>
-                  <td>
-                    MPX Staked
-                  </td>
-                  <td>
+        <div class="staking__inner">
+          <div class="staking__inner-main">
+            <div class="stakingItem">
+              <h4 class="sm">
+                TVL
+                <p>
+                  $0.00
+                </p>
+              </h4>
+            </div>
+            <div class="stakingItem">
+              <h4 class="sm">
+                MRX Staked
+                <p>
+                  $0.00
+                </p>
+              </h4>
+            </div>
+            <div class="stakingItem">
+              <h4 class="sm">
+                Total liquidity
+                <p>
+                  $0.00
+                </p>
+              </h4>
+            </div>
+            <div class="stakingItem">
+              <h4 class="sm">
+                ARP
+                <p>
+                  $0.00
+                </p>
+              </h4>
+            </div>
+          </div>
+          <div class="staking__inner-content">
+            <div class="stakingItem">
+              <h4 class="sm">
+                My MRX
+                <p>
+                  $0.00
+                  <small>
                     0
-                  </td>
-                  <td>
-                    Rewards (MPX)
-                  </td>
-                  <td>
+                  </small>
+                </p>
+              </h4>
+            </div>
+            <div class="stakingItem">
+              <h4 class="sm">
+                My locked MRX
+                <p>
+                  $0.00
+                  <small>
                     0
-                  </td>
-                  <td>
-                    <a href="#" class="button">
-                      Stake
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <h4>
-                      <span><img src='./images/icons/main-icon.png' alt=""></span>
-                      MPX
-                      <small>
-                        15.32%
-                      </small>
-                    </h4>
-                  </td>
-                  <td>
-                    MPX Staked
-                  </td>
-                  <td>
-                    0
-                  </td>
-                  <td>
-                    Rewards (MPX)
-                  </td>
-                  <td>
-                    0
-                  </td>
-                  <td>
-                    <a href="#" class="button">
-                      Stake
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <h4>
-                      <span><img src='./images/icons/main-icon.png' alt=""></span>
-                      MPX
-                      <small>
-                        15.32%
-                      </small>
-                    </h4>
-                  </td>
-                  <td>
-                    MPX Staked
-                  </td>
-                  <td>
-                    0
-                  </td>
-                  <td>
-                    Rewards (MPX)
-                  </td>
-                  <td>
-                    0
-                  </td>
-                  <td>
-                    <a href="#" class="button">
-                      Stake
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                  </small>
+                    <span>
+                    </span>
+                </p>
+              </h4>
+            </div>
+            <div class="stakingItem">
+              <h4 class="sm">
+                Locked until
+                <p>
+                  -
+                </p>
+              </h4>
+            </div>
+            <div class="stakingItem">
+              <h4 class="sm">
+                Locked until
+                <p>
+                  -
+                </p>
+              </h4>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- table end
+    <!-- staking end
     =========================================== -->
     <!-- footer start
     =========================================== -->
@@ -327,6 +287,7 @@
           d="M5.026 13C11.064 13 14.367 7.99696 14.367 3.66596C14.367 3.52596 14.367 3.38396 14.361 3.24396C15.0041 2.77845 15.5591 2.20211 16 1.54196C15.3993 1.80681 14.7628 1.98137 14.111 2.05996C14.7975 1.6496 15.3117 1.00393 15.558 0.242961C14.913 0.625085 14.207 0.893334 13.471 1.03596C12.9762 0.508984 12.3214 0.159878 11.6081 0.0427182C10.8948 -0.074442 10.1627 0.0468822 9.52534 0.387898C8.88796 0.728914 8.38081 1.27059 8.08245 1.92902C7.78409 2.58745 7.71118 3.32589 7.875 4.02996C6.56974 3.96451 5.29282 3.62543 4.12704 3.0347C2.96127 2.44398 1.93268 1.6148 1.108 0.600961C0.68934 1.32404 0.561574 2.17936 0.750646 2.99323C0.939718 3.80709 1.43145 4.51849 2.126 4.98296C1.60554 4.96528 1.09652 4.82552 0.64 4.57496V4.61996C0.640897 5.37744 0.903307 6.11138 1.38287 6.69772C1.86244 7.28406 2.52975 7.68683 3.272 7.83796C2.99026 7.91558 2.69923 7.95427 2.407 7.95296C2.20098 7.95359 1.99538 7.9345 1.793 7.89596C2.00279 8.54802 2.41127 9.11813 2.96125 9.52644C3.51122 9.93475 4.17513 10.1608 4.86 10.173C3.69656 11.0868 2.2594 11.5824 0.78 11.58C0.519321 11.5811 0.258823 11.566 0 11.535C1.50151 12.4922 3.2453 13.0005 5.026 13Z" />
       </g>
     </symbol>
+   
   </svg>
   <!-- js
     =========================================== -->
