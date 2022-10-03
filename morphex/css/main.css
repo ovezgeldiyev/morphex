@@ -3137,9 +3137,6 @@ table.sm tbody tr.bg:after {
   .aboutItem {
     padding: 10px 12px;
   }
-  .aboutItem__row > p:last-child {
-    display: none;
-  }
   .aboutItem.uniq .aboutItem__row > p:first-child {
     padding: 5px 13px 5px 10px;
     border-radius: 7px;
@@ -3333,7 +3330,7 @@ table.sm tbody tr.bg:after {
   }
   .infoItem h4 span {
     width: 9px;
-    height: 9x;
+    height: 9px;
   }
   .infoItem p {
     font-size: 11px;
@@ -3430,5 +3427,21 @@ table.sm tbody tr.bg:after {
   }
   .about__inner-col-top h4 br {
     display: none;
+  }
+}
+@media (max-width: 390px) {
+  .intro__inner-row-wrapper {
+    padding: 0 15px;
+  }
+  .intro__inner .button {
+    padding: 8px 16px;
+  }
+  .introItem__wrapper {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 25px 28px 20px;
+  }
+  .introItem__wrapper .introItem {
+    margin: 0 0 20px 0;
   }
 }

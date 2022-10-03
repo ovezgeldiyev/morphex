@@ -355,6 +355,31 @@
         }
     }
 }
+// 390px
+@mixin intro-xxxsm-xxsm {
+    .intro {
+        &__inner {
+            &-row {
+                &-wrapper {
+                    padding: 0 15px;
+                }
+            }
+            .button {
+                padding: 8px 16px;
+            }
+        }
+        &Item {
+            &__wrapper {
+                width: 100%;
+                margin-bottom: 50px;
+                padding: 25px 28px 20px;
+                .introItem {
+                    margin: 0 0 20px 0;
+                }
+            }
+        }
+    }
+}
 .info {
     padding: 10px 0;
     &__inner {
@@ -681,7 +706,7 @@
                 line-height: 16px;
                 span {
                     width: 9px;
-                    height: 9x;
+                    height: 9px;
                 }
             }
             p {
@@ -1624,7 +1649,7 @@
             &__row {
                 & > p {
                     &:last-child {
-                        display: none;
+                        // display: none;
                     }
                 }
             }
