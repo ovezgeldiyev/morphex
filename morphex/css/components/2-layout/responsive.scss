@@ -621,19 +621,12 @@
         }
       }
     }
-<<<<<<< HEAD
   }
-  @include intro-xxsm-xsm;
-  @include info-xxsm-xsm;
-  @include borrow-xxsm-xsm;
-  @include staking-xxsm-xsm;
-=======
     @include intro-xxsm-xsm;
     @include info-xxsm-xsm;
     @include borrow-xxsm-xsm;
     @include about-xxsm-xsm;
 
->>>>>>> 5a981f0853ae153ec7c45159246be61e1d127564
 }
 // 390px
 @include xxxsm-xxsm {

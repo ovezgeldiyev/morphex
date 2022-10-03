@@ -3820,22 +3820,35 @@ table.sm tbody tr.bg:after {
     margin-bottom: 0;
   }
 
-<<<<<<< HEAD
-  .staking__inner-main {
-    padding: 5px;
+  .about__inner-col-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .staking__inner-main .stakingItem {
-    padding: 18px 20px 19px;
-    margin: 5px;
-    width: calc(50% - 10px);
+  .about__inner-col-top.big {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  .staking__inner-content {
-    margin: 0 -5px;
+  .about__inner-col-top-buttons {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
-  .staking__inner-content .stakingItem {
-    padding: 18px 20px 19px;
-    margin: 5px;
-    width: calc(50% - 10px);
+  .about__inner-col-top-buttons .button {
+    max-width: 74px;
+  }
+  .about__inner-col-top-buttons .button:first-child {
+    max-width: 156px;
+  }
+  .about__inner-col-top h4 {
+    margin-bottom: 14px;
+  }
+  .about__inner-col-top h4 br {
+    display: none;
   }
 }
 @media (max-width: 390px) {
@@ -4023,36 +4036,5 @@ table.sm tbody tr.bg:after {
     line-height: 12px;
     padding: 6px 15px;
     margin-left: 5px;
-=======
-  .about__inner-col-top {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .about__inner-col-top.big {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .about__inner-col-top-buttons {
-    width: 100%;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .about__inner-col-top-buttons .button {
-    max-width: 74px;
-  }
-  .about__inner-col-top-buttons .button:first-child {
-    max-width: 156px;
-  }
-  .about__inner-col-top h4 {
-    margin-bottom: 14px;
-  }
-  .about__inner-col-top h4 br {
-    display: none;
->>>>>>> 5a981f0853ae153ec7c45159246be61e1d127564
   }
 }
