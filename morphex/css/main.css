@@ -825,8 +825,9 @@ table {
 }
 table.long {
   padding-bottom: 150px;
+  margin: -12px 0;
 }
-table .header {
+table .top {
   position: sticky;
   top: -2px;
   left: 0;
@@ -858,6 +859,15 @@ table thead tr::after {
   -webkit-box-shadow: -1px 8px 19px rgba(111, 111, 111, 0.04);
           box-shadow: -1px 8px 19px rgba(111, 111, 111, 0.04);
   z-index: 1;
+}
+table thead.space th {
+  padding: unset !important;
+}
+table thead.space tr {
+  background-color: unset;
+}
+table thead.space tr:after {
+  display: none;
 }
 table tbody {
   display: table-footer-group;
@@ -925,15 +935,6 @@ table.big thead:first-child th h6 p span {
 }
 table.big thead:first-child th:first-child {
   padding-left: 99px;
-}
-table.big thead.space th {
-  padding: unset;
-}
-table.big thead.space tr {
-  background-color: unset;
-}
-table.big thead.space tr:after {
-  display: none;
 }
 table.big th:first-child {
   padding-left: 99px;
@@ -1387,7 +1388,7 @@ table.sm tbody tr.bg:after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 .list__inner-buttons .button {
   font-size: 10px;
@@ -3226,6 +3227,7 @@ table.sm tbody tr.bg:after {
   }
   table.long {
     padding-bottom: 20px;
+    margin: unset;
   }
   table.sm {
     display: -webkit-box;
@@ -3442,16 +3444,19 @@ table.sm tbody tr.bg:after {
     margin-bottom: 5px;
   }
 
-  .list .list__inner {
+  .list__inner {
     padding: 2px 0 0;
   }
-  .list .list__inner.gauges {
+  .list__inner.gauges {
     padding: 12px 0 0;
   }
-  .list .list__inner-main {
+  .list__inner-buttons {
+    margin-bottom: 30px;
+  }
+  .list__inner-main {
     height: auto;
   }
-  .list .list__inner-main-wrapper:after {
+  .list__inner-main-wrapper:after {
     display: none;
   }
 }

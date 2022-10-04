@@ -321,7 +321,7 @@ p {
     border-radius: 7px;
   }
 }
-.input{ 
+.input {
   border-radius: 7px;
   display: flex;
   align-items: center;
@@ -330,32 +330,32 @@ p {
   padding: 10px 13px;
   margin-bottom: 10px;
   &__button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 14px;
-      height: 14px;
-      margin-right: 5px;
-      cursor: pointer;
-      transition: .3s ease;
-      &:hover {
-        opacity: .8;
-      }
-      &:last-child {
-          margin-right: 0;
-      }
-      img {
-          width: 100%;
-      }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+      opacity: 0.8;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    img {
+      width: 100%;
+    }
   }
   input {
-      width: calc(100% - 50px);
-      background-color: $light-gray;
-      border-radius: 7px;
-      font-family: $rubik;
-      font-size: 13px;
-      line-height: 16px;
-      color: $gray-3;
+    width: calc(100% - 50px);
+    background-color: $light-gray;
+    border-radius: 7px;
+    font-family: $rubik;
+    font-size: 13px;
+    line-height: 16px;
+    color: $gray-3;
   }
 }
 .lock {
@@ -589,9 +589,9 @@ table {
   white-space: nowrap;
   &.long {
     padding-bottom: 150px;
-
+    margin: -12px 0;
   }
-  .header {
+  .top {
     position: sticky;
     top: -2px;
     left: 0;
@@ -621,6 +621,17 @@ table {
         border-radius: 12px;
         box-shadow: -1px 8px 19px rgba(111, 111, 111, 0.04);
         z-index: 1;
+      }
+    }
+    &.space {
+      th {
+        padding: unset !important;
+      }
+      tr {
+        background-color: unset;
+        &:after {
+          display: none;
+        }
       }
     }
   }
@@ -671,7 +682,7 @@ table {
       color: $black-2;
     }
   }
-
+ 
   &.big {
     thead {
       &:first-child {
@@ -693,17 +704,6 @@ table {
           }
           &:first-child {
             padding-left: 99px;
-          }
-        }
-      }
-      &.space {
-        th {
-          padding: unset;
-        }
-        tr {
-          background-color: unset;
-          &:after {
-            display: none;
           }
         }
       }

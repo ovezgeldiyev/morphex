@@ -5,7 +5,7 @@
       display: flex;
       width: 100%;
       justify-content: space-between;
-      margin-bottom: 12px;
+      margin-bottom: 15px;
       .button {
         font-size: 10px;
         line-height: 12px;
@@ -54,7 +54,6 @@
           z-index: 3;
         }
       }
-
     }
     &.staking {
       padding: 25px 0 0 0;
@@ -76,18 +75,20 @@
 // 650px
 @mixin list-sm-md-extra {
   .list {
-    .list {
-      &__inner {
-        padding: 2px 0 0;
-        &.gauges {
-          padding: 12px 0 0;
-        }
-        &-main{
-          height: auto;
-          &-wrapper{
-            &:after{
-              display: none;
-            }
+    &__inner {
+      padding: 2px 0 0;
+      &.gauges {
+        padding: 12px 0 0;
+      }
+      &-buttons{
+          margin-bottom: 30px;
+      }
+      &-main {
+        height: auto;
+
+        &-wrapper {
+          &:after {
+            display: none;
           }
         }
       }
@@ -211,29 +212,28 @@
               border: 0.8px solid $black;
               margin-left: unset;
               cursor: pointer;
-              transition: .2s linear;
-              &:hover{
+              transition: 0.2s linear;
+              &:hover {
                 border-color: $blue;
-                &::before{
+                &::before {
                   background-color: $blue;
                 }
-                &:after{
+                &:after {
                   background-color: $blue;
-
                 }
               }
-              &::before{
+              &::before {
                 content: "";
                 width: 1px;
                 height: 6px;
                 background-color: $black;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50% , -50%);
+                transform: translate(-50%, -50%);
                 position: absolute;
                 border-radius: 10px;
               }
-              &::after{
+              &::after {
                 content: "";
                 width: 6px;
                 height: 1px;
@@ -241,7 +241,7 @@
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50% , -50%);
+                transform: translate(-50%, -50%);
                 border-radius: 10px;
               }
             }
@@ -266,7 +266,7 @@
                 font-size: 13px;
                 line-height: 15px;
               }
-               span{
+              span {
                 right: -5px;
               }
             }
@@ -372,7 +372,7 @@
                 line-height: 14px;
                 margin: 0 0 0 15px;
               }
-              span{
+              span {
                 right: 11px;
                 top: 50%;
                 transform: translateY(-50%);
