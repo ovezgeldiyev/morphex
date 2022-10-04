@@ -30,8 +30,11 @@
     }
     &-main {
       margin: 0;
-      height: 600px;
+      height: calc(100vh - 160px);
       overflow-y: auto;
+      &.sm {
+        height: calc(100vh - 210px);
+      }
       &::-webkit-scrollbar {
         display: none;
       }
@@ -40,7 +43,7 @@
         &:after {
           content: "";
           width: 100%;
-          height: 100%;
+          height: 40%;
           max-height: 170px;
           background: linear-gradient(
             0deg,
@@ -52,6 +55,7 @@
           bottom: 0;
           left: 0;
           z-index: 3;
+          pointer-events: none;
         }
       }
     }
