@@ -835,7 +835,7 @@ table.long {
 }
 table .top {
   position: sticky;
-  top: -2px;
+  top: 0;
   left: 0;
   z-index: 5;
 }
@@ -3242,7 +3242,7 @@ table.sm tbody tr.bg:after {
     line-height: 16px;
   }
   table.long {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     margin: unset;
   }
   table.sm {
@@ -3470,6 +3470,9 @@ table.sm tbody tr.bg:after {
     margin-bottom: 30px;
   }
   .list__inner-main {
+    height: auto;
+  }
+  .list__inner-main.sm {
     height: auto;
   }
   .list__inner-main-wrapper:after {
