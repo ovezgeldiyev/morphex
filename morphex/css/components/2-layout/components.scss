@@ -49,6 +49,11 @@ h4 {
     width: 12px;
     height: 12px;
     margin-left: 6px;
+    cursor: pointer;
+    transition: .2s ease;
+    &:hover {
+      opacity: .8;
+    }
     img {
       width: 100%;
     }
@@ -119,7 +124,6 @@ p {
     padding-bottom: 0;
   }
   &__bg {
-    // max-width: 1920px;
     position: absolute;
     z-index: -1;
     margin: 0 auto;
@@ -743,6 +747,11 @@ table {
         fill: $black;
         margin-left: 7px;
         margin: -1.3px 0 0 7px;
+        cursor: pointer;
+        transition: .2s ease;
+        &:hover {
+          opacity: .8;
+        }
       }
       &:nth-child(5) {
         display: flex;

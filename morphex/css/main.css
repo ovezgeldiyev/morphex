@@ -171,6 +171,12 @@ h4 span {
   width: 12px;
   height: 12px;
   margin-left: 6px;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+h4 span:hover {
+  opacity: 0.8;
 }
 h4 span img {
   width: 100%;
@@ -962,6 +968,12 @@ table.sm th svg {
   fill: #000;
   margin-left: 7px;
   margin: -1.3px 0 0 7px;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+table.sm th svg:hover {
+  opacity: 0.8;
 }
 table.sm th:nth-child(5) {
   display: -webkit-box;
