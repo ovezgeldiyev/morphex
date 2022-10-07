@@ -621,6 +621,7 @@ table {
         border-radius: 12px;
         box-shadow: -1px 8px 19px rgba(111, 111, 111, 0.04);
         z-index: 1;
+        pointer-events: none;
       }
     }
     &.space {

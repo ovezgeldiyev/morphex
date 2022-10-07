@@ -12,6 +12,8 @@
   @include intro-xlg-xxlg;
   @include info-xlg-xxlg;
   @include borrow-xlg-xxlg;
+  @include staking-xlg-xxlg;
+
 }
 // 1024px
 @include lg-xlg {
@@ -57,6 +59,8 @@
   @include intro-lg-xlg;
   @include borrow-lg-xlg;
   @include about-lg-xlg;
+  @include staking-lg-xlg;
+
 }
 // 930px
 @include md-lg {
@@ -124,6 +128,8 @@
   @include info-md-lg;
   @include borrow-md-lg;
   @include about-md-lg;
+  @include staking-md-lg;
+
 }
 // 840px
 @include md-lg-extra {
@@ -187,7 +193,6 @@
       }
     }
   }
-  @include staking-md-lg-extra;
 }
 // 750px
 @include sm-md {
@@ -316,6 +321,7 @@
   @include about-sm-md;
   @include list-sm-md;
   @include staking-sm-md;
+
 }
 // 650px
 @include sm-md-extra {
@@ -543,6 +549,8 @@
   @include borrow-sm-md-extra;
   @include about-sm-md-extra;
   @include list-sm-md-extra;
+  @include staking-sm-md-extra;
+
 }
 // 540px
 @include xsm-sm {
@@ -578,6 +586,8 @@
   @include borrow-xsm-sm;
   @include about-xsm-sm;
   @include list-xsm-sm;
+  @include staking-xsm-sm;
+
 }
 @include xsm-sm-h {
   .nav {
@@ -639,7 +649,6 @@
 }
 // 390px
 @include xxxsm-xxsm {
-  @include staking-xxxsm-xxsm;
 }
 // 380px
 @include sm {
@@ -778,5 +787,7 @@
   }
   @include list-sm;
   @include intro-xxxsm-xxsm;
+  @include staking-xxxsm-xxsm;
+
 
 }
