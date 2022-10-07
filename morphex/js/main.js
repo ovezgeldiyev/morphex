@@ -10,6 +10,8 @@ var progress = document.getElementById("progress");
 var lock = document.getElementById("lock");
 var lockInner = document.getElementById("lockInner");
 var lockBtn = document.getElementById("lockBtn");
+var stake = document.getElementById("stake");
+var unstake = document.getElementById("unstake");
 
 menuBtn.onclick = function () {
   menu.classList.toggle("active");
@@ -45,13 +47,7 @@ if (popupBtn) {
     body.classList.toggle("active");
   };
 }
-if (popupBtn) {
-  popupBtn.onclick = function () {
-    popup.classList.toggle("active");
-    popupOuter.classList.toggle("active");
-    body.classList.toggle("active");
-  };
-}
+
 if (checkbox && progress) {
   checkbox.onclick = function (e) {
     if (e.target.checked) {
@@ -64,6 +60,23 @@ if (checkbox && progress) {
 }
 
 // menu end
+
+
+if (stake) {
+  stake.onclick = function () {
+    lock.classList.toggle("active");
+    lockInner.classList.toggle("active");
+    body.classList.toggle("active");
+  };
+}
+if (unstake) {
+  unstake.onclick = function () {
+    lock.classList.toggle("active");
+    lockInner.classList.toggle("active");
+    body.classList.toggle("active");
+  };
+}
+
 if (lockBtn) {
   lockBtn.onclick = function () {
     lock.classList.toggle("active");
