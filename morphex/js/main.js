@@ -45,7 +45,13 @@ if (popupBtn) {
     body.classList.toggle("active");
   };
 }
-
+if (popupBtn) {
+  popupBtn.onclick = function () {
+    popup.classList.toggle("active");
+    popupOuter.classList.toggle("active");
+    body.classList.toggle("active");
+  };
+}
 if (checkbox && progress) {
   checkbox.onclick = function (e) {
     if (e.target.checked) {
