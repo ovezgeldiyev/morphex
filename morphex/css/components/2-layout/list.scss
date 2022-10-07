@@ -89,7 +89,9 @@
       }
       &-main {
         height: auto;
-
+        &.sm {
+          height: auto;
+        }
         &-wrapper {
           &:after {
             display: none;
